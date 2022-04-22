@@ -432,7 +432,6 @@ h2, h1 {
 
 .pinkbutton {
   color: white;
-  background: linear-gradient(-15deg, #9356DC, #FF79DA);
   padding: 20px 25px 20px 25px;
   border-radius: 50px;
   -webkit-box-shadow: 7px 5px 8px #c9c9c9;

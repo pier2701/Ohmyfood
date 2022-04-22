@@ -1,0 +1,54 @@
+@import "./Base/normalize";
+@import "./base/link";
+@import "./layout/form";
+@import "./utils/extensions";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./layout/container";
+body {
+    font-family: 'Roboto', Arial, 'Arial Black', Impact, 'Times New Roman', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+h2, h1 {
+    @extend %main_title
+}
+h2 {
+    text-align: left;
+}
+article {
+    height: 380px;
+    text-align: center;
+    background-color: $color-background;
+}
+form, input {
+    background-color: $color-form;
+}
+#city-form:focus {
+    background-color: $color-form;
+}
+.font_bold {
+    font-weight: bolder;
+    font-size: 25px;
+}
+form {
+    box-shadow: 0px 3px 6px #dbdbdb inset;
+}
+.header__text {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.fonction  {
+    display: flex;
+    flex-direction: column;
+}
+.pinkbutton {
+    background: linear-gradient(-15deg, #9356DC, #FF79DA );
+}
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+/*modification du champ de saisie du formulaire*/
+#city-form {
+    font-weight: bold;
+}
+#city-form::placeholder {
+    font-weight: bold;
+    font-size: 17px;
+    color: #000000;
+    padding-left: 15px;
+}
+input {
+    outline: none;
+    border: none;
+}
+/*permet de foncer la police dans Firefox*/
+input::placeholder {
+    opacity: 1;
+}
+form {
+    width: 100%;
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}

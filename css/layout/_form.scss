@@ -1,15 +1,18 @@
 /*modification du champ de saisie du formulaire*/
 #city-form {
     font-weight: bold;
+    background-color: #eaeaea;
 }
 #city-form::placeholder {
     font-weight: bold;
     font-size: 17px;
+    background-color: #eaeaea;
     color: #000000;
     padding-left: 15px;
 }
 input {
     outline: none;
+    background-color: #eaeaea;
     border: none;
 }
 /*permet de foncer la police dans Firefox*/
@@ -21,4 +24,5 @@ form {
     padding: 20px 0 20px 0;
     display: flex;
     justify-content: center;
+    background-color: #eaeaea;
 }

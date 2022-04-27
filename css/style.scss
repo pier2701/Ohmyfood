@@ -56,13 +56,245 @@ nav {
     background-color: $color-background;
     padding: 0 0 30px 0;
 }
-
-
-
-
-
-
-
-
+.homepage {
+    overflow: hidden;
+    z-index: 1;
+    animation: hide-homepage 1s 3s both;  
+}
+@keyframes hide-homepage {
+    0% {
+        transform: translateX(8000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes hide-loadingpage {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-9999px);
+    }
+}
+.loading_spinner {
+    animation: hide-loadingpage 0s 3s both;
+}
+@keyframes moveletter_1 {
+    0% {
+        transform: translateX(-9999px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes moveletter_2 {
+    0% {
+        transform: translateX(-9999px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes moveletter_3 {
+    0% {
+        transform: translateY(-9999px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes moveletter_4 {
+    0% {
+        transform: translateY(-9999px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes moveletter_5 {
+    0% {
+        transform: translateY(9999px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes moveletter_6 {
+    0% {
+        transform: translateY(9999px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes moveletter_7 {
+    0% {
+        transform: translateX(9999px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes moveletter_8 {
+    0% {
+        transform: translateX(9999px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.letter_1 {
+    color: $color1;
+    animation: moveletter_1 1.5s 0.2s both;
+}
+.letter_2 {
+    color: $color2;
+    animation: moveletter_2 1.5s 0.3s both;
+}
+.letter_3 {
+    color: $color3;
+    animation: moveletter_3 1.5s 0.4s both;
+}
+.letter_4 {
+    color: $color4;
+    animation: moveletter_4 1.5s 0.4s both;
+}
+.letter_5 {
+    color: $color5;
+    animation: moveletter_5 1.5s 0.5s both;
+}
+.letter_6 {
+    color: $color6;
+    animation: moveletter_6 1.5s 0.6s both;
+}
+.letter_7 {
+    color: $color7;
+    animation: moveletter_7 1.5s 0.7s both;
+}
+.letter_8 {
+    color: $color8;
+    animation: moveletter_8 1.5s 0.8s both;
+}
+@keyframes spinning {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    10% {
+        opacity: 0.9;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    30% {
+        opacity: 0.7;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0.4;
+    }
+    70% {
+        opacity: 0.3;
+    }
+    80% {
+        opacity: 0.2;
+    }
+    90% {
+        opacity: 0.1;
+    }
+    100% {
+        transform: rotate(36000deg);
+        opacity: 0;
+    }
+}
+@keyframes loadingtext {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(9999px);
+    }
+}
+@keyframes colortext {
+    0% {
+        
+        color: rgb(93, 220, 236);
+      }
+      
+      10% {
+        
+        color: #cf94f7;
+      }
+      
+      20% {
+        
+        color: #6ad1bc;
+      }
+      
+      30% {
+        
+        color: #fca368;
+      }
+      
+      40% {
+        
+        color: rgb(7, 223, 223);
+      }
+      
+      50% {
+        
+        color: #67b1fc;
+      }
+      
+      60% {
+        
+        color: rgb(159, 159, 255);
+      }
+      
+      70% {
+        
+        color: #2980b9;
+      }
+      80% {
+     
+        color: #e2d396;
+      }
+      
+      90% {
+     
+        color: #9ab929;
+      }
+      
+      100% {
+        
+        color: rgb(255, 129, 150);
+      }
+}
+@keyframes textpoint {
+    0% {
+        transform: translateX(9999px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.point1 {
+    display: inline-block;
+    animation: textpoint 0.3s 0.2s both;
+}
+.point2 {
+    display: inline-block;
+    animation: textpoint 0.4s 0.7s both;
+}
+.point3 {
+    display: inline-block;
+    animation: textpoint 0.5s 1.4s both;
+}
 
 

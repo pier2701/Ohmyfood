@@ -470,8 +470,9 @@ h2, h1 {
 }
 .fa-heart:active + #fill_heart {
   z-index: 1;
+  animation: heart 0.3s 0s normal both;
   -webkit-animation: heart 0.3s 0s normal both;
-          animation: heart 0.3s 0s normal both;
+  -moz-animation: heart 0.3s 0s normal both;
 }
 
 /**l'effet progresse et reste actif**/

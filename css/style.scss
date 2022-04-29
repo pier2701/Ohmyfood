@@ -8,6 +8,7 @@
 @import "./layout/container";
 body {
     width: 100%;
+    margin: 0;
     font-family: 'Roboto', Arial, 'Arial Black', Impact, 'Times New Roman', sans-serif;
     font-weight: 300;
     font-size: 17px;
@@ -57,6 +58,7 @@ nav {
     padding: 0 0 30px 0;
 }
 .homepage {
+    width: 100%;
     overflow: hidden;
     z-index: 1;
     animation: hide-homepage 1s 3s both;  
@@ -176,6 +178,7 @@ nav {
     color: $color8;
     animation: moveletter_8 1.5s 0.8s both;
 }
+$rotate_cage: rotate3D(90, -4000, -70, 3600deg);
 @keyframes spinning {
     0% {
         transform: rotate(0deg);
@@ -209,7 +212,44 @@ nav {
         opacity: 0.1;
     }
     100% {
-        transform: rotate(36000deg);
+        transform: rotate(-9000deg);
+        opacity: 0;
+    }
+}
+@keyframes spinning2 {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.1;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    60% {
+        opacity: 0.8;
+    }
+    70% {
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 0.4;
+    }
+    90% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: $rotate_cage;
         opacity: 0;
     }
 }
@@ -295,6 +335,15 @@ nav {
 .point3 {
     display: inline-block;
     animation: textpoint 0.5s 1.4s both;
+}
+@keyframes heart {
+    0% {
+        transform: scale(0);
+        transform-origin: bottom;
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 

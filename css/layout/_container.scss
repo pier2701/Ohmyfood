@@ -74,7 +74,7 @@ footer {
 /* loader */
 .loading_spinner {
     font-family: 'Shrikhand', Arial, 'Arial Black', Impact, 'Times New Roman', sans-serif;
-    font-size: 90px;
+    font-size: 47px;
     font-weight: bold;
     position: absolute;
     width: 100%;
@@ -86,48 +86,48 @@ footer {
 }
 .loading_text {
     position: absolute;
-    bottom: 10px;
+    bottom: 16px;
     display: flex;
     font-size: 30px;
     animation: loadingtext 3s 2.5s both;
     
 }
 .spin {
-    border-left: 2px solid darken($color: #bdb9ff, $amount: 10);
-    border-top: 4px solid darken($color: #e2c899, $amount: 25);
-    border-right: 6px solid darken($color: #fffc60, $amount: 35);
-    border-bottom: 8px solid darken($color: #65ffff, $amount: 40);
-    border-radius: 50%;
+    border-left: 3px solid darken($color: #bdb9ff, $amount: 10);
+    border-top: 5px solid darken($color: #e2c899, $amount: 25);
+    border-right: 7px solid darken($color: #fffc60, $amount: 35);
+    border-bottom: 9px solid darken($color: #65ffff, $amount: 40);
+    border-radius: 47%;
     position: absolute;
-    width: 410px;
-    height: 370px;
+    width: 365px;
+    height: 350px;
     display: flex; 
     justify-content: center;
     align-items: center;
     z-index: -1;
-    animation: spinning 3s 0s both;
+    animation: spinning 3s 0s both ;
  }
  .spin2 {
-    border-left: 1px solid darken($color: #2effd2, $amount: 10);
-    border-top: 9px solid darken($color: #5eff3e, $amount: 25);
-    border-right: 3px solid darken($color: #4df1c8, $amount: 35);
-    border-bottom: 4px solid darken($color: #fb8fff, $amount: 40);
-    border-radius: 50%;
+    border-left: 20px solid darken($color: #2effd2, $amount: 10);
+    border-top: 2px solid darken($color: #5eff3e, $amount: 25);
+    border-right: 20px solid darken($color: #4df1c8, $amount: 35);
+    border-bottom: 2px solid darken($color: #fb8fff, $amount: 40);
+    border-radius: 35%;
     position: absolute;
-    width: 390px;
-    height: 370px;
+    width: 365px;
+    height: 220px;
     display: flex; 
     justify-content: center;
     align-items: center;
     z-index: -1;
-    animation: spinning 3s 0s both;
+    animation: spinning2 2.9s 0.1s both;
  }
  .moving_text {
     display: flex;
     justify-content: center;
     position: absolute;
     z-index: -2;
-    animation: colortext 2s 0.1s both;
+    animation: colortext 3s 0.1s both;
  }
 
 

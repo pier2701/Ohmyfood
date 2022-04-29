@@ -26,13 +26,13 @@ article {
     width: 100%;
     height: 380px;
     text-align: center;
-    background-color: $color-background;
+    background: $color-background;
 }
 form, input {
-    background-color: $color-form;
+    background: $color-form;
 }
 #city-form:focus {
-    background-color: $color-form;
+    background: $color-form;
 }
 .font_bold {
     font-weight: bolder;
@@ -343,6 +343,15 @@ $rotate_cage: rotate3D(90, -4000, -70, 3600deg);
     }
     100% {
         transform: scale(1);
+    }
+}
+@keyframes functions {
+    0% {
+        transform: scaleX(0);
+    }
+    
+    100% {
+        transform: scaleX(1);
     }
 }
 

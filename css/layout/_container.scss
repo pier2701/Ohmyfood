@@ -14,6 +14,11 @@
             font-size: 16px;
         } 
     z-index: 0;
+    &:hover {
+        opacity: 0.9;
+        box-shadow: 10px 8px 10px #e7e7e7;
+    }
+    animation: functions 2s 0.1s both;
 }
 .card {
     width: 91%;
@@ -25,6 +30,9 @@
     margin-left: auto;
     margin-right: auto;
     z-index: 0;
+    &:hover {
+        box-shadow: 15px 15px 35px #c9c9c9;
+    }
 }
 .card__image {
     width: 100%;
@@ -39,7 +47,7 @@
     font-weight: bold;
 }
 .card__text {
-    padding: 10px 0 15px 15px;
+    padding: 10px 0px 15px 15px;
 }
 .pinkbutton {
     background: linear-gradient(-15deg, #9356DC, #FF79DA );
@@ -56,6 +64,10 @@
             transform: scale(1.1, 0.9);
             box-shadow: 12px 10px 9px #c9c9c9;
             background: linear-gradient(-95deg, #FF79DA, #9356DC );
+        }
+        &:hover {
+            opacity: 0.85;
+            box-shadow: 15px 13px 9px #c9c9c9;
         }
 }
 footer {
@@ -129,8 +141,3 @@ footer {
     z-index: -2;
     animation: colortext 3s 0.1s both;
  }
-
-
-
-
-

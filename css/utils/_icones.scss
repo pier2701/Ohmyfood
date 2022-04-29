@@ -3,7 +3,7 @@
     top: 10px;
     font-size: 25px;
     opacity: 1;
-     z-index: 1;
+    z-index: 1;
     &:active + #fill_heart {
         z-index: 1;
         animation: heart 0.3s 0s normal both;
@@ -21,7 +21,7 @@
     -webkit-background-clip: text;
     color: transparent;
     animation-play-state: paused;
-    z-index: -1;
+    z-index: -1; 
 }
 .fa-mobile-screen-button, .fa-list, .fa-store{
     font-size: 20px;

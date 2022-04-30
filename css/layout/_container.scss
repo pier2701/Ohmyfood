@@ -93,11 +93,23 @@
             font-size: 16px;
         } 
     z-index: 0;
+    @include for-tablet-portrait-up {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 10%;
+        justify-content: center;
+        border-radius: 50px;
+    }
     &:hover {
         opacity: 0.9;
         box-shadow: 15px 13px 10px #e7e7e7;
     }
     
+}
+.function__text {
+    @include for-tablet-portrait-up {
+        font-size: 20px;
+    }
 }
 #function_1 {
     animation: functions 2s linear 6 4s;
@@ -107,10 +119,6 @@
 }
 #function_3 {
     animation: functions 2s linear 9 8s;
-}
-#restaurants {
-    padding-top: 45px;
-    padding-left: 4.7%;
 }
 .card {
     width: 91%;
@@ -122,6 +130,9 @@
     margin-left: auto;
     margin-right: auto;
     z-index: 0;
+    @include for-tablet-portrait-up {
+        width: 80%;
+    }
     &:hover {
         box-shadow: 15px 15px 35px #c9c9c9;
     }
@@ -143,6 +154,9 @@
     font-weight: bold;
     color: #139273;
     background: #99E2D0;
+    @include for-tablet-portrait-up {
+        right: 11%;
+    }
 }
 .card__name {
     font-weight: bold;

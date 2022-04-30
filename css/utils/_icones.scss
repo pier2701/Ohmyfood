@@ -38,6 +38,10 @@
     font-size: 20px;
     padding: 23px 20px 25px 10px;
     color: #7e7e7e;
+    @include for-tablet-portrait-up {
+        
+        
+    }
 }
 .fa-handshake-angle {
     font-size: 15px;

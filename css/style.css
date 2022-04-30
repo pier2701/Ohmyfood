@@ -511,7 +511,6 @@ h2, h1 {
   padding: 23px 20px 25px 10px;
   color: #7e7e7e;
 }
-
 .fa-handshake-angle {
   font-size: 15px;
   padding-right: 10px;
@@ -660,10 +659,27 @@ h2, h1 {
   padding-top: 25px;
   font-size: 16px;
 }
+@media (min-width: 600px) {
+  .function {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 50px;
+  }
+}
 .function:hover {
   opacity: 0.9;
   -webkit-box-shadow: 15px 13px 10px #e7e7e7;
           box-shadow: 15px 13px 10px #e7e7e7;
+}
+
+@media (min-width: 600px) {
+  .function__text {
+    font-size: 20px;
+  }
 }
 
 #function_1 {
@@ -679,11 +695,6 @@ h2, h1 {
 #function_3 {
   -webkit-animation: functions 2s linear 9 8s;
           animation: functions 2s linear 9 8s;
-}
-
-#restaurants {
-  padding-top: 45px;
-  padding-left: 4.7%;
 }
 
 .card {
@@ -702,6 +713,11 @@ h2, h1 {
   margin-left: auto;
   margin-right: auto;
   z-index: 0;
+}
+@media (min-width: 600px) {
+  .card {
+    width: 80%;
+  }
 }
 .card:hover {
   -webkit-box-shadow: 15px 15px 35px #c9c9c9;
@@ -726,6 +742,11 @@ h2, h1 {
   font-weight: bold;
   color: #139273;
   background: #99E2D0;
+}
+@media (min-width: 600px) {
+  .card__nouveau {
+    right: 11%;
+  }
 }
 
 .card__name {
@@ -776,6 +797,11 @@ body {
   font-weight: 300;
   font-size: 17px;
 }
+@media (min-width: 600px) {
+  body {
+    font-size: 20px;
+  }
+}
 
 h2 {
   text-align: left;
@@ -807,6 +833,21 @@ form, input {
 
 .font__title {
   padding: 0px 0 0 15px;
+}
+@media (min-width: 600px) {
+  .font__title {
+    text-align: center;
+    margin: 35px 0 40px 0;
+  }
+}
+
+#fonctionnement {
+  padding-left: 4.7%;
+}
+
+#restaurants {
+  padding-top: 45px;
+  padding-left: 4.7%;
 }
 
 form {

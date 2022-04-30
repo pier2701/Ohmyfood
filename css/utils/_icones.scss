@@ -1,7 +1,18 @@
+.fa-mobile-screen-button {
+    animation: icone_function 2s linear 6 4s;
+}
+.fa-list {
+    animation: icone_function 2s linear 7 6s;
+}
+.fa-store {
+    animation: icone_function 2s linear 9 8s;
+}
 .fa-heart {
     position: relative;
-    top: 10px;
+    top: 15px;
+    right: 40px;
     font-size: 25px;
+    cursor: pointer;
     opacity: 1;
     z-index: 1;
     &:active + #fill_heart {
@@ -14,8 +25,8 @@
 /**l'effet progresse et reste actif**/
 #fill_heart {
     position: relative;
-    top: 10px;
-    right: 25px;
+    top: -11px;
+    right: 40px;
     background:-webkit-linear-gradient(bottom, #FF79DA 10%, #9356DC 70%);
     background-clip: text;
     -webkit-background-clip: text;

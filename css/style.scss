@@ -347,11 +347,19 @@ $rotate_cage: rotate3D(90, -4000, -70, 3600deg);
 }
 @keyframes functions {
     0% {
-        transform: scaleX(0);
+        background: #f6f6f6;
     }
     
     100% {
-        transform: scaleX(1);
+        background: #f5edff;
+    }
+}
+@keyframes icone_function {
+    0% {
+        color: #7e7e7e;
+    }
+    100% {
+        color: #9356DC;
     }
 }
 

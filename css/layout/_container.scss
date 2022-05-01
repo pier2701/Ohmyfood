@@ -20,6 +20,7 @@
     
 }
 .spin {
+    @include for-desktop-up {
     border-left: 3px solid darken($color: #bdb9ff, $amount: 10);
     border-top: 5px solid darken($color: #e2c899, $amount: 25);
     border-right: 7px solid darken($color: #fffc60, $amount: 35);
@@ -33,8 +34,10 @@
     align-items: center;
     z-index: -1;
     animation: spinning 3s 0s both ;
- }
+    }
+}
  .spin2 {
+    @include for-desktop-up {
     border-left: 20px solid darken($color: #2effd2, $amount: 10);
     border-top: 2px solid darken($color: #5eff3e, $amount: 25);
     border-right: 20px solid darken($color: #4df1c8, $amount: 35);
@@ -48,7 +51,8 @@
     align-items: center;
     z-index: -1;
     animation: spinning2 2.9s 0.1s both;
- }
+    }
+}
 .moving_text {
     display: flex;
     justify-content: center;
@@ -56,7 +60,6 @@
     z-index: -2;
     animation: colortext 3s 0.1s both;
  }
-
 .pinkbutton {
     background: linear-gradient(-15deg, #9356DC, #FF79DA );
     color: #ffff;
@@ -100,6 +103,15 @@
         justify-content: center;
         border-radius: 50px;
     }
+    @include for-tablet-landscape-up {
+        width: 50%;
+    }
+    @include for-desktop-up {
+        width: 37%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 5%;
+    }
     &:hover {
         opacity: 0.9;
         box-shadow: 15px 13px 10px #e7e7e7;
@@ -109,6 +121,9 @@
 .function__text {
     @include for-tablet-portrait-up {
         font-size: 20px;
+    }
+    @include for-tablet-landscape-up {
+        font-size: 24px;
     }
 }
 #function_1 {
@@ -130,19 +145,31 @@
     margin-left: auto;
     margin-right: auto;
     z-index: 0;
+    transition: 0.5s;
     @include for-tablet-portrait-up {
         width: 80%;
     }
-    &:hover {
-        box-shadow: 15px 15px 35px #c9c9c9;
+    @include for-tablet-landscape-up {
+        width: 70%;
+        height: 280px;
+        margin-bottom: 45px;
     }
+    @include for-desktop-up {
+        width: 60%;
+        height: 350px;
+        &:hover {
+            box-shadow: 15px 15px 35px #c9c9c9;
+        }
+    }       
 }
 .card__image {
     width: 100%;
-    height: 180px;
+    height: 200px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
-    
+    @include for-desktop-up {
+        height: 270px;
+    }
 }
 .card__nouveau {
     position: absolute;
@@ -154,8 +181,24 @@
     font-weight: bold;
     color: #139273;
     background: #99E2D0;
+    transition: 0.4s;
     @include for-tablet-portrait-up {
         right: 11%;
+    }
+    @include for-tablet-landscape-up {
+        right: 16%;
+    }
+    @include for-desktop-up {
+        right: 20%;
+    }
+    @include for-big-desktop-up {
+        padding: 14px 20px 14px 20px;
+        margin-top: 30px;
+        border-radius: 15px;
+        box-shadow: 4px 4px 20px #c9c9c9;
+        &:hover {
+            box-shadow: 10px 10px 25px #c9c9c9;
+        }
     }
 }
 .card__name {
@@ -165,6 +208,9 @@
 .card__text {
     width: 100%;
     padding: 10px 0px 15px 15px;
+    @include for-tablet-landscape-up {
+        font-size: 22px;
+    }
 }
 .card__display {
     width: 100%;

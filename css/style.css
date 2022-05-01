@@ -368,7 +368,7 @@ a {
   font-size: 17px;
   background-color: #eaeaea;
   color: #000000;
-  padding-left: 15px;
+  padding-left: 28px;
 }
 
 #city-form::-moz-placeholder {
@@ -376,7 +376,7 @@ a {
   font-size: 17px;
   background-color: #eaeaea;
   color: #000000;
-  padding-left: 15px;
+  padding-left: 28px;
 }
 
 #city-form:-ms-input-placeholder {
@@ -384,7 +384,7 @@ a {
   font-size: 17px;
   background-color: #eaeaea;
   color: #000000;
-  padding-left: 15px;
+  padding-left: 28px;
 }
 
 #city-form::-ms-input-placeholder {
@@ -392,7 +392,7 @@ a {
   font-size: 17px;
   background-color: #eaeaea;
   color: #000000;
-  padding-left: 15px;
+  padding-left: 28px;
 }
 
 #city-form::placeholder {
@@ -400,7 +400,7 @@ a {
   font-size: 17px;
   background-color: #eaeaea;
   color: #000000;
-  padding-left: 15px;
+  padding-left: 28px;
 }
 
 input {
@@ -436,6 +436,8 @@ form {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #eaeaea;
+  -webkit-box-shadow: 0px 3px 6px #dbdbdb inset;
+          box-shadow: 0px 3px 6px #dbdbdb inset;
 }
 
 h2, h1 {
@@ -491,6 +493,12 @@ h2, h1 {
   -webkit-animation: heart 0.3s 0s normal both;
   -moz-animation: heart 0.3s 0s normal both;
 }
+@media (min-width: 900px) {
+  .fa-heart {
+    font-size: 30px;
+    right: 50px;
+  }
+}
 
 /**l'effet progresse et reste actif**/
 #fill_heart {
@@ -505,12 +513,24 @@ h2, h1 {
           animation-play-state: paused;
   z-index: -1;
 }
+@media (min-width: 900px) {
+  #fill_heart {
+    right: 50px;
+    top: -15.5px;
+  }
+}
 
 .fa-mobile-screen-button, .fa-list, .fa-store {
   font-size: 20px;
   padding: 23px 20px 25px 10px;
   color: #7e7e7e;
 }
+@media (min-width: 900px) {
+  .fa-mobile-screen-button, .fa-list, .fa-store {
+    font-size: 25px;
+  }
+}
+
 .fa-handshake-angle {
   font-size: 15px;
   padding-right: 10px;
@@ -551,50 +571,54 @@ h2, h1 {
           animation: loadingtext 3s 2.5s both;
 }
 
-.spin {
-  border-left: 3px solid #8d86ff;
-  border-top: 5px solid #c49238;
-  border-right: 7px solid #ada900;
-  border-bottom: 9px solid #009898;
-  border-radius: 47%;
-  position: absolute;
-  width: 365px;
-  height: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: -1;
-  -webkit-animation: spinning 3s 0s both;
-          animation: spinning 3s 0s both;
+@media (min-width: 1200px) {
+  .spin {
+    border-left: 3px solid #8d86ff;
+    border-top: 5px solid #c49238;
+    border-right: 7px solid #ada900;
+    border-bottom: 9px solid #009898;
+    border-radius: 47%;
+    position: absolute;
+    width: 365px;
+    height: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: -1;
+    -webkit-animation: spinning 3s 0s both;
+            animation: spinning 3s 0s both;
+  }
 }
 
-.spin2 {
-  border-left: 20px solid #00fac4;
-  border-top: 2px solid #1fbe00;
-  border-right: 20px solid #0a8164;
-  border-bottom: 2px solid #bb00c2;
-  border-radius: 35%;
-  position: absolute;
-  width: 365px;
-  height: 220px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: -1;
-  -webkit-animation: spinning2 2.9s 0.1s both;
-          animation: spinning2 2.9s 0.1s both;
+@media (min-width: 1200px) {
+  .spin2 {
+    border-left: 20px solid #00fac4;
+    border-top: 2px solid #1fbe00;
+    border-right: 20px solid #0a8164;
+    border-bottom: 2px solid #bb00c2;
+    border-radius: 35%;
+    position: absolute;
+    width: 365px;
+    height: 220px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: -1;
+    -webkit-animation: spinning2 2.9s 0.1s both;
+            animation: spinning2 2.9s 0.1s both;
+  }
 }
 
 .moving_text {
@@ -670,6 +694,19 @@ h2, h1 {
     border-radius: 50px;
   }
 }
+@media (min-width: 900px) {
+  .function {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .function {
+    width: 37%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 5%;
+  }
+}
 .function:hover {
   opacity: 0.9;
   -webkit-box-shadow: 15px 13px 10px #e7e7e7;
@@ -679,6 +716,11 @@ h2, h1 {
 @media (min-width: 600px) {
   .function__text {
     font-size: 20px;
+  }
+}
+@media (min-width: 900px) {
+  .function__text {
+    font-size: 24px;
   }
 }
 
@@ -713,23 +755,43 @@ h2, h1 {
   margin-left: auto;
   margin-right: auto;
   z-index: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 @media (min-width: 600px) {
   .card {
     width: 80%;
   }
 }
-.card:hover {
-  -webkit-box-shadow: 15px 15px 35px #c9c9c9;
-          box-shadow: 15px 15px 35px #c9c9c9;
+@media (min-width: 900px) {
+  .card {
+    width: 70%;
+    height: 280px;
+    margin-bottom: 45px;
+  }
+}
+@media (min-width: 1200px) {
+  .card {
+    width: 60%;
+    height: 350px;
+  }
+  .card:hover {
+    -webkit-box-shadow: 15px 15px 35px #c9c9c9;
+            box-shadow: 15px 15px 35px #c9c9c9;
+  }
 }
 
 .card__image {
   width: 100%;
-  height: 180px;
+  height: 200px;
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 1200px) {
+  .card__image {
+    height: 270px;
+  }
 }
 
 .card__nouveau {
@@ -742,10 +804,35 @@ h2, h1 {
   font-weight: bold;
   color: #139273;
   background: #99E2D0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 @media (min-width: 600px) {
   .card__nouveau {
     right: 11%;
+  }
+}
+@media (min-width: 900px) {
+  .card__nouveau {
+    right: 16%;
+  }
+}
+@media (min-width: 1200px) {
+  .card__nouveau {
+    right: 20%;
+  }
+}
+@media (min-width: 1440px) {
+  .card__nouveau {
+    padding: 14px 20px 14px 20px;
+    margin-top: 30px;
+    border-radius: 15px;
+    -webkit-box-shadow: 4px 4px 20px #c9c9c9;
+            box-shadow: 4px 4px 20px #c9c9c9;
+  }
+  .card__nouveau:hover {
+    -webkit-box-shadow: 10px 10px 25px #c9c9c9;
+            box-shadow: 10px 10px 25px #c9c9c9;
   }
 }
 
@@ -757,6 +844,11 @@ h2, h1 {
 .card__text {
   width: 100%;
   padding: 10px 0px 15px 15px;
+}
+@media (min-width: 900px) {
+  .card__text {
+    font-size: 22px;
+  }
 }
 
 .card__display {
@@ -811,11 +903,34 @@ main {
   width: 100%;
 }
 
+.header__img {
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-transition: 0.5S;
+  transition: 0.5S;
+}
+@media (min-width: 900px) {
+  .header__img {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
 article {
   width: 100%;
   height: 380px;
   text-align: center;
   background: #f6f6f6;
+}
+
+@media (min-width: 1440px) {
+  aside, nav {
+    max-width: 1440px;
+    margin: auto;
+    border-radius: 50px 50px 0 0;
+  }
 }
 
 form, input {
@@ -844,22 +959,28 @@ form, input {
 #fonctionnement {
   padding-left: 4.7%;
 }
+@media (min-width: 900px) {
+  #fonctionnement {
+    font-size: 28px;
+  }
+}
 
 #restaurants {
   padding-top: 45px;
   padding-left: 4.7%;
 }
-
-form {
-  -webkit-box-shadow: 0px 3px 6px #dbdbdb inset;
-          box-shadow: 0px 3px 6px #dbdbdb inset;
+@media (min-width: 900px) {
+  #restaurants {
+    font-size: 28px;
+  }
 }
 
-.header__img {
-  display: block;
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+@media (min-width: 900px) {
+  .function__numbers {
+    font-size: 25px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
 }
 
 nav {

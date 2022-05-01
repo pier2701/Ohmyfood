@@ -21,6 +21,11 @@
         -webkit-animation: heart 0.3s 0s normal both;
         -moz-animation: heart 0.3s 0s normal both;
     }
+    @include for-tablet-landscape-up {
+        font-size: 30px;
+        right: 50px;
+
+    }
 }
 /**l'effet progresse et reste actif**/
 #fill_heart {
@@ -33,14 +38,17 @@
     color: transparent;
     animation-play-state: paused;
     z-index: -1; 
+    @include for-tablet-landscape-up {
+        right: 50px;
+        top: -15.5px;
+    }
 }
 .fa-mobile-screen-button, .fa-list, .fa-store{
     font-size: 20px;
     padding: 23px 20px 25px 10px;
     color: #7e7e7e;
-    @include for-tablet-portrait-up {
-        
-        
+    @include for-tablet-landscape-up {
+        font-size: 25px;
     }
 }
 .fa-handshake-angle {

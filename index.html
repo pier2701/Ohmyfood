@@ -13,7 +13,7 @@
 </head>
     
 <body>
-     <div class="loading_spinner">
+    <div class="loading_spinner">
             <span class="letter_1">o</span>
             <span class="letter_2">h</span>
             <span class="letter_3">m</span>
@@ -24,12 +24,11 @@
             <span class="letter_8">d</span>
             <div class="spin"></div>
             <div class="spin2"></div>
-    
         <div class="moving_text"><p class="loading_text">loading<span class="point1">.</span><span class="point2">.</span><span class="point3">.</span></p></div>
     </div>
     <div class="homepage">
 <header>  
-    <img class="header__img" src="./images/ohmyfood@2x.svg" alt="logo_ohmyfood">
+    <div class="box_title"><img class="header__img" src="./images/ohmyfood@2x.svg" alt="logo_ohmyfood"></div>
 </header>   
     <article>
         <form action="post">
@@ -38,23 +37,22 @@
             maxlength="40">
         </form>
     <div class="header__text"><p class="font_bold">Réservez le menu qui<br/> vous convient</p><p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p></div>
-    <a href="#Restaurants"><button class="pinkbutton">Explorer nos restautrants</button></a>
+    <a href="#Restaurants"><button class="pink__button">Explorer nos restaurants</button></a>
     </article>
     
     <main>
         <aside>
-            <p class="font_bold font__title">Fonctionnement</p>
+            <p class="font_bold font__title" id="fonctionnement">Fonctionnement</p>
                 <div>
                     <div id="function_1" class="function"><span class="function__numbers">1</span><i class="fa-solid fa-mobile-screen-button"></i><div class="function__text">Choisissez un restaurant</div></div>
                     <div id="function_2" class="function"><span class="function__numbers">2</span><i class="fa-solid fa-list"></i><div class="function__text">Composez votre menu</div></div>
                     <div id="function_3" class="function"><span class="function__numbers">3</span><i class="fa-solid fa-store"></i><div class="function__text">Dégustez au restaurant</div></div>
                 </div>
         </aside>
-       
         <nav>
             <p class="font_bold font__title" id="restaurants">Restaurants</p>
                 <div class="card">
-                <a class="card__link" href="#"><div class="card__nouveau">Nouveau</div><img class="card__image" src="./images/la_palette_du_gout.jpg" alt="la_palette_du_gout">
+                <a class="card__link" href="la_palette_du_gout.html"><div class="card__nouveau">Nouveau</div><img class="card__image" src="./images/la_palette_du_gout.jpg" alt="la_palette_du_gout">
                     <div class="card__display">
                         <div class="card__text">
                             <div class="card__name">La palette du goût</div>
@@ -67,7 +65,7 @@
                 </div>
                 
                 <div class="card">
-                <a class="card__link" href="#"><div class="card__nouveau">Nouveau</div><img class="card__image" src="./images/la_note_enchantee.jpg" alt="la_palette_du_gout">
+                <a class="card__link" href="la_note_enchantee.html"><div class="card__nouveau">Nouveau</div><img class="card__image" src="./images/la_note_enchantee.jpg" alt="la_palette_du_gout">
                     <div class="card__display">   
                         <div class="card__text">
                             <div class="card__name">La note enchantée</div>
@@ -80,7 +78,7 @@
                 </div>
                 
                 <div class="card">
-                <a class="card__link" href="#"><img class="card__image" src="./images/a_la_francaise.jpg" alt="la_palette_du_gout">
+                <a class="card__link" href="a_la_francaise.html"><img class="card__image" src="./images/a_la_francaise.jpg" alt="la_palette_du_gout">
                     <div class="card__display">   
                         <div class="card__text">
                             <div class="card__name">À la française</div>
@@ -91,9 +89,8 @@
                         </div>
                     </div>
                 </div>
-               
                 <div class="card">
-                <a class="card__link" href="#"><img class="card__image" src="./images/le_delice_des_sens.jpg" alt="la_palette_du_gout">
+                <a class="card__link" href="le_delice_des_sens.html"><img class="card__image" src="./images/le_delice_des_sens.jpg" alt="la_palette_du_gout">
                     <div class="card__display">
                         <div class="card__text">
                             <div class="card__name">Le délice des sens</div>

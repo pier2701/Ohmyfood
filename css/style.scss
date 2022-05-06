@@ -93,6 +93,7 @@ nav {
     background-color: $color-background;
     padding: 0 0 30px 0;
 }
+/**post-animation site**/
 .homepage {
     width: 100%;
     overflow: hidden;
@@ -107,6 +108,7 @@ nav {
         transform: translateX(0);
     }
 }
+/**post-animation loader**/
 @keyframes hide-loadingpage {
     0% {
         transform: translateX(0);
@@ -115,9 +117,11 @@ nav {
         transform: translateX(-9999px);
     }
 }
+/**animation loader**/
 .loading_spinner {
     animation: hide-loadingpage 0s 3s both;
 }
+/**animation loader-titre**/
 @keyframes moveletter_1 {
     0% {
         transform: translateX(-9999px);
@@ -214,6 +218,7 @@ nav {
     color: $color8;
     animation: moveletter_8 1.5s 0.8s both;
 }
+/**animation loader-spinner_rond**/
 $rotate_cage: rotate3D(90, -4000, -70, 3600deg);
 @keyframes spinning {
     0% {
@@ -252,6 +257,7 @@ $rotate_cage: rotate3D(90, -4000, -70, 3600deg);
         opacity: 0;
     }
 }
+/**animation loader-spinner_intérieur**/
 @keyframes spinning2 {
     0% {
         transform: rotate(0deg);
@@ -289,6 +295,7 @@ $rotate_cage: rotate3D(90, -4000, -70, 3600deg);
         opacity: 0;
     }
 }
+/**animation "loading" vers le bas**/
 @keyframes loadingtext {
     0% {
         transform: translateY(0);
@@ -297,61 +304,43 @@ $rotate_cage: rotate3D(90, -4000, -70, 3600deg);
         transform: translateY(9999px);
     }
 }
+/**animation "loading" en couleurs**/
 @keyframes colortext {
     0% {
-        
         color: rgb(93, 220, 236);
-      }
-      
-      10% {
-        
+    }
+    10% {
         color: #cf94f7;
-      }
-      
-      20% {
-        
+    }
+    20% {
         color: #6ad1bc;
-      }
-      
-      30% {
-        
+    }
+    30% {
         color: #fca368;
-      }
-      
-      40% {
-        
+    }
+    40% {
         color: rgb(7, 223, 223);
-      }
-      
-      50% {
-        
+    }
+    50% {
         color: #67b1fc;
-      }
-      
-      60% {
-        
+    }
+    60% {
         color: rgb(159, 159, 255);
-      }
-      
-      70% {
-        
+    }
+    70% {
         color: #2980b9;
-      }
-      80% {
-     
+    }
+    80% {
         color: #e2d396;
-      }
-      
-      90% {
-     
+    }
+    90% {
         color: #9ab929;
-      }
-      
-      100% {
-        
+    }
+    100% {
         color: rgb(255, 129, 150);
-      }
+    }
 }
+/**animation "points" du "loading"**/
 @keyframes textpoint {
     0% {
         transform: translateX(9999px);
@@ -372,6 +361,7 @@ $rotate_cage: rotate3D(90, -4000, -70, 3600deg);
     display: inline-block;
     animation: textpoint 0.5s 1.4s both;
 }
+/**animation coeur**/
 @keyframes heart {
     0% {
         transform: scale(0);
@@ -381,6 +371,7 @@ $rotate_cage: rotate3D(90, -4000, -70, 3600deg);
         transform: scale(1);
     }
 }
+/**animation Fonctionnement**/
 @keyframes functions {
     0% {
         background: #f6f6f6;
@@ -396,6 +387,15 @@ $rotate_cage: rotate3D(90, -4000, -70, 3600deg);
     }
     100% {
         color: #9356DC;
+    }
+}
+/**animation "check"**/
+@keyframes check_rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
 

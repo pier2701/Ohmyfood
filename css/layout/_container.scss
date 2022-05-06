@@ -34,7 +34,7 @@
     z-index: -1;
     animation: spinning 3s 0s both ;
 }
- .spin2 {
+.spin2 {
     border-left: 20px solid darken($color: #2effd2, $amount: 10);
     border-top: 2px solid darken($color: #5eff3e, $amount: 25);
     border-right: 20px solid darken($color: #4df1c8, $amount: 35);
@@ -220,6 +220,15 @@
     width: 0px;
 }
 /**mise en page des restaurants**/
+.main__background {
+    background: #f6f6f6;
+    height: 1200px;
+    margin-top: -80px;
+    margin-bottom: -100px;
+}
+.main__note--enchantee {
+    height: 1300px;
+}
 .image__title {
     width: 100%;
     height: 300px;
@@ -229,7 +238,7 @@
 .restaurant__title {
     font-family: 'Shrikhand', Arial, 'Arial Black', Impact, 'Times New Roman', sans-serif;
     font-size: 27px;
-    background: #ffff;
+    background: #f6f6f6;
     border-radius: 50px 50px 0 0;
     width: 100%;
     display: flex;
@@ -240,6 +249,7 @@
 }
 .restaurant__name {
     margin-top: 40px;
+    padding-bottom: 40px;
     padding-left: 5%;
 }
 .restaurant__heart {
@@ -249,6 +259,7 @@
     padding-right: 9%;
     object-fit: cover;
 }
+/**titres des catégories**/
 .dishes__name {
     width: 70px;
     position: relative;
@@ -265,20 +276,83 @@
         left: 30%;
     }
 }
+/**les choix de plat**/
 .choices__display {
     display: flex;
     flex-direction: column;
-    
     width: 100%;
 }
 .choice__name {
     width: 90%;
-    height: 35px;
+    height: 70px;
+    display: flex;
     margin: auto;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:  "...";
+    background: #ffff;
     margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: 7px 7px 50px #ececec;
+    padding-right: 25px;
+    border-radius: 17px;
+    box-shadow: 12px 12px 150px #f5f5f5;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.9;
+        box-shadow: 15px 13px 10px #e7e7e7;
+        }
+    &--bold {
+        width: 100%;
+        font-weight: bold;
+        font-size: 17px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow:  ellipsis;
+    }
+    &--regular {
+        width: 100%;
+        font-size: 14px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow:  ellipsis;
+    }
+    &:active .choice__name--icone {
+        margin-left: 50px; 
+        transform: translateX(0);
+    }
 }
+.choice__name:active .fa-check {
+    animation: check_rotation 0.3s 0s ease-in both;
+}
+.choice__name--details {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    line-height: 25px;
+}
+.choice__name--price {
+    width: 7%;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 0 17px 17px 0;
+    padding-top: 38px;
+    padding-right: 50px;
+    margin-left: -55px;
+    transform: translateX(64px);
+}
+.choice__name--icone {
+    margin-right: -24px;
+    background: $color-tertiaire;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 0 17px 17px 0;
+    transition: 0.3s;
+    transform: translateX(72px);
+}
+/**bouton de commande**/
 .order__button {
     background: linear-gradient(-15deg, #9356DC, #FF79DA );
     color: #ffff;
@@ -286,7 +360,7 @@
     display: block;
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 150px;
     border: none;
     cursor: pointer;
     border-radius: 50px;

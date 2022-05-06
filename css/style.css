@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -548,6 +549,20 @@ h2, h1 {
   left: 20px;
 }
 
+.fa-check {
+  font-size: 13px;
+  color: #99E2D0;
+  background: white;
+  border-radius: 50px;
+  padding: 4px 5px 4px 5px;
+  position: relative;
+  top: 23px;
+}
+.fa-check:active {
+  -webkit-animation: check_rotation 0.4s 0s ease-in both;
+          animation: check_rotation 0.4s 0s ease-in both;
+}
+
 /* loader */
 .loading_spinner {
   font-family: "Shrikhand", Arial, "Arial Black", Impact, "Times New Roman", sans-serif;
@@ -872,6 +887,17 @@ h2, h1 {
 }
 
 /**mise en page des restaurants**/
+.main__background {
+  background: #f6f6f6;
+  height: 1200px;
+  margin-top: -80px;
+  margin-bottom: -100px;
+}
+
+.main__note--enchantee {
+  height: 1300px;
+}
+
 .image__title {
   width: 100%;
   height: 300px;
@@ -883,7 +909,7 @@ h2, h1 {
 .restaurant__title {
   font-family: "Shrikhand", Arial, "Arial Black", Impact, "Times New Roman", sans-serif;
   font-size: 27px;
-  background: white;
+  background: #f6f6f6;
   border-radius: 50px 50px 0 0;
   width: 100%;
   display: -webkit-box;
@@ -899,6 +925,7 @@ h2, h1 {
 
 .restaurant__name {
   margin-top: 40px;
+  padding-bottom: 40px;
   padding-left: 5%;
 }
 
@@ -913,6 +940,7 @@ h2, h1 {
      object-fit: cover;
 }
 
+/**titres des catégories**/
 .dishes__name {
   width: 70px;
   position: relative;
@@ -930,6 +958,7 @@ h2, h1 {
   left: 30%;
 }
 
+/**les choix de plat**/
 .choices__display {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -943,14 +972,90 @@ h2, h1 {
 
 .choice__name {
   width: 90%;
-  height: 35px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: auto;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: "...";
+  background: white;
   margin-bottom: 15px;
-  border-radius: 10px;
-  -webkit-box-shadow: 7px 7px 50px #ececec;
-          box-shadow: 7px 7px 50px #ececec;
+  padding-right: 25px;
+  border-radius: 17px;
+  -webkit-box-shadow: 12px 12px 150px #f5f5f5;
+          box-shadow: 12px 12px 150px #f5f5f5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.choice__name:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: 15px 13px 10px #e7e7e7;
+          box-shadow: 15px 13px 10px #e7e7e7;
+}
+.choice__name--bold {
+  width: 100%;
+  font-weight: bold;
+  font-size: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.choice__name--regular {
+  width: 100%;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.choice__name:active .choice__name--icone {
+  margin-left: 50px;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
+.choice__name:active .fa-check {
+  -webkit-animation: check_rotation 0.3s 0s ease-in both;
+          animation: check_rotation 0.3s 0s ease-in both;
+}
+
+.choice__name--details {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  line-height: 25px;
+}
+
+.choice__name--price {
+  width: 7%;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 0 17px 17px 0;
+  padding-top: 38px;
+  padding-right: 50px;
+  margin-left: -55px;
+  -webkit-transform: translateX(64px);
+          transform: translateX(64px);
+}
+
+.choice__name--icone {
+  margin-right: -24px;
+  background: #99E2D0;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 0 17px 17px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateX(72px);
+          transform: translateX(72px);
+}
+
+/**bouton de commande**/
 .order__button {
   background: linear-gradient(-15deg, #9356DC, #FF79DA);
   color: white;
@@ -958,7 +1063,7 @@ h2, h1 {
   display: block;
   margin: auto;
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 150px;
   border: none;
   cursor: pointer;
   border-radius: 50px;
@@ -1103,6 +1208,7 @@ nav {
   padding: 0 0 30px 0;
 }
 
+/**post-animation site**/
 .homepage {
   width: 100%;
   overflow: hidden;
@@ -1132,6 +1238,7 @@ nav {
             transform: translateX(0);
   }
 }
+/**post-animation loader**/
 @-webkit-keyframes hide-loadingpage {
   0% {
     -webkit-transform: translateX(0);
@@ -1152,11 +1259,13 @@ nav {
             transform: translateX(-9999px);
   }
 }
+/**animation loader**/
 .loading_spinner {
   -webkit-animation: hide-loadingpage 0s 3s both;
           animation: hide-loadingpage 0s 3s both;
 }
 
+/**animation loader-titre**/
 @-webkit-keyframes moveletter_1 {
   0% {
     -webkit-transform: translateX(-9999px);
@@ -1167,7 +1276,6 @@ nav {
             transform: translateX(0);
   }
 }
-
 @keyframes moveletter_1 {
   0% {
     -webkit-transform: translateX(-9999px);
@@ -1366,6 +1474,7 @@ nav {
           animation: moveletter_8 1.5s 0.8s both;
 }
 
+/**animation loader-spinner_rond**/
 @-webkit-keyframes spinning {
   0% {
     -webkit-transform: rotate(0deg);
@@ -1405,7 +1514,6 @@ nav {
     opacity: 0;
   }
 }
-
 @keyframes spinning {
   0% {
     -webkit-transform: rotate(0deg);
@@ -1445,6 +1553,7 @@ nav {
     opacity: 0;
   }
 }
+/**animation loader-spinner_intérieur**/
 @-webkit-keyframes spinning2 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -1523,6 +1632,7 @@ nav {
     opacity: 0;
   }
 }
+/**animation "loading" vers le bas**/
 @-webkit-keyframes loadingtext {
   0% {
     -webkit-transform: translateY(0);
@@ -1543,6 +1653,7 @@ nav {
             transform: translateY(9999px);
   }
 }
+/**animation "loading" en couleurs**/
 @-webkit-keyframes colortext {
   0% {
     color: rgb(93, 220, 236);
@@ -1613,6 +1724,7 @@ nav {
     color: rgb(255, 129, 150);
   }
 }
+/**animation "points" du "loading"**/
 @-webkit-keyframes textpoint {
   0% {
     -webkit-transform: translateX(9999px);
@@ -1651,6 +1763,7 @@ nav {
           animation: textpoint 0.5s 1.4s both;
 }
 
+/**animation coeur**/
 @-webkit-keyframes heart {
   0% {
     -webkit-transform: scale(0);
@@ -1663,7 +1776,6 @@ nav {
             transform: scale(1);
   }
 }
-
 @keyframes heart {
   0% {
     -webkit-transform: scale(0);
@@ -1676,6 +1788,7 @@ nav {
             transform: scale(1);
   }
 }
+/**animation Fonctionnement**/
 @-webkit-keyframes functions {
   0% {
     background: #f6f6f6;
@@ -1706,5 +1819,26 @@ nav {
   }
   100% {
     color: #9356DC;
+  }
+}
+/**animation "check"**/
+@-webkit-keyframes check_rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes check_rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }

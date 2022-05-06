@@ -548,6 +548,12 @@ h2, h1 {
   top: 25px;
   left: 20px;
 }
+@media (min-width: 900px) {
+  .fa-arrow-left {
+    font-size: 35px;
+    top: 50px;
+  }
+}
 
 .fa-check {
   font-size: 13px;
@@ -888,6 +894,17 @@ h2, h1 {
   height: 1200px;
   margin-top: -80px;
   margin-bottom: -100px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+@media (min-width: 1200px) {
+  .main__background {
+    max-width: 1100px;
+    margin: auto;
+    border-radius: 50px 50px 0 0;
+    -webkit-box-shadow: 15px 13px 10px #e7e7e7;
+            box-shadow: 15px 13px 10px #e7e7e7;
+  }
 }
 
 .main__note--enchantee {
@@ -917,12 +934,31 @@ h2, h1 {
   z-index: 1;
   position: relative;
   bottom: 60px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (min-width: 1200px) {
+  .restaurant__title {
+    width: 460px;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 50px;
+    -webkit-box-shadow: 15px 13px 10px #e7e7e7;
+            box-shadow: 15px 13px 10px #e7e7e7;
+  }
 }
 
 .restaurant__name {
   margin-top: 40px;
   padding-bottom: 40px;
   padding-left: 5%;
+}
+@media (min-width: 1200px) {
+  .restaurant__name {
+    margin-right: 35px;
+  }
 }
 
 .restaurant__heart {
@@ -943,6 +979,8 @@ h2, h1 {
   padding-left: 20px;
   padding-bottom: 2px;
   margin-bottom: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .dishes__name::after {
   content: "";
@@ -952,6 +990,18 @@ h2, h1 {
   position: absolute;
   bottom: -5px;
   left: 30%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (min-width: 900px) {
+  .dishes__name {
+    padding-left: 80px;
+    top: 50px;
+  }
+  .dishes__name::after {
+    left: 100%;
+    width: 70%;
+  }
 }
 
 /**les choix de plat**/
@@ -1106,6 +1156,22 @@ h2, h1 {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
+@media (min-width: 600px) {
+  .choice__name {
+    width: 70%;
+  }
+}
+@media (min-width: 900px) {
+  .choice__name {
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  .choice__name {
+    -webkit-box-shadow: 10px 8px 10px #e7e7e7;
+            box-shadow: 10px 8px 10px #e7e7e7;
+  }
+}
 
 .choice__name:active .fa-check {
   -webkit-animation: check_rotation 0.3s linear forwards;
@@ -1211,6 +1277,7 @@ footer {
 
 body {
   width: 100%;
+  min-width: 320px;
   margin: 0;
   font-family: "Roboto", Arial, "Arial Black", Impact, "Times New Roman", sans-serif;
   font-weight: 300;
@@ -1239,10 +1306,26 @@ main {
   -webkit-transition: 0.5S;
   transition: 0.5S;
 }
+@media (min-width: 600px) {
+  .header__img {
+    width: 30%;
+  }
+}
 @media (min-width: 900px) {
   .header__img {
     padding-top: 40px;
     padding-bottom: 40px;
+    width: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .header__img {
+    width: 25%;
+  }
+}
+@media (min-width: 1440px) {
+  .header__img {
+    width: 25%;
   }
 }
 

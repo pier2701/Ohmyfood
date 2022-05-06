@@ -8,6 +8,7 @@
 @import "./layout/container";
 body {
     width: 100%;
+    min-width: 320px;
     margin: 0;
     font-family: 'Roboto', Arial, 'Arial Black', Impact, 'Times New Roman', sans-serif;
     font-weight: 300;
@@ -33,9 +34,19 @@ main {
     padding-top: 20px;
     padding-bottom: 20px;
     transition: 0.5S;
+    @include for-tablet-portrait-up {
+        width: 30%;
+    }
     @include for-tablet-landscape-up {
         padding-top: 40px;
         padding-bottom: 40px;
+        width: 30%;
+    }
+    @include for-desktop-up {
+        width: 25%;
+    }
+    @include for-big-desktop-up {
+        width: 25%;
     }
 }
 article {

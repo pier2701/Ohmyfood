@@ -64,6 +64,10 @@
     position: absolute;
     top: 25px;
     left: 20px;
+    @include for-tablet-landscape-up {
+        font-size: 35px;
+        top: 50px;
+    }
 }
 .fa-check {
     font-size: 13px;

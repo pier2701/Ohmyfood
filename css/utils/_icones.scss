@@ -17,9 +17,9 @@
     z-index: 1;
     &:active + #fill_heart {
         z-index: 1;
-        animation: heart 0.3s 0s normal both;
-        -webkit-animation: heart 0.3s 0s normal both;
-        -moz-animation: heart 0.3s 0s normal both;
+        animation: heart 0.3s 0s normal forwards;
+        -webkit-animation: heart 0.3s 0s normal forwards;
+        -moz-animation: heart 0.3s 0s normal forwards;
     }
     @include for-tablet-landscape-up {
         font-size: 30px;
@@ -74,7 +74,5 @@
     position: relative;
     top: 23px;
     
-    &:active {
-        animation: check_rotation 0.4s 0s ease-in both;
-    }
+    
 }

@@ -282,6 +282,36 @@
     flex-direction: column;
     width: 100%;
 }
+@keyframes dishes-display {
+    0% {
+        transform: translateX(1400px);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    40% {
+        opacity: 0.2;
+    }
+    60% {
+        opacity: 0.2;
+    }
+    80%{
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.choice__animation {
+    @for $i from 1 through 10 {
+        &-#{$i} {
+            animation: dishes-display 0.7s 4s linear both;
+            animation-duration: 0.7s*$i;
+        }
+    }
+}
 .choice__name {
     width: 90%;
     height: 70px;
@@ -301,28 +331,28 @@
         opacity: 0.9;
         box-shadow: 15px 13px 10px #e7e7e7;
         }
-    &--bold {
-        width: 100%;
-        font-weight: bold;
-        font-size: 17px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow:  ellipsis;
-    }
-    &--regular {
-        width: 100%;
-        font-size: 14px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow:  ellipsis;
-    }
     &:active .choice__name--icone {
         margin-left: 50px; 
         transform: translateX(0);
     }
 }
 .choice__name:active .fa-check {
-    animation: check_rotation 0.3s 0s ease-in both;
+        animation: check_rotation 0.3s linear forwards;
+}
+.choice__name--bold {
+    width: 100%;
+    font-weight: bold;
+    font-size: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:  ellipsis;
+}
+.choice__name--regular {
+    width: 100%;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:  ellipsis;
 }
 .choice__name--details {
     width: 100%;
@@ -352,6 +382,7 @@
     transition: 0.3s;
     transform: translateX(72px);
 }
+
 /**bouton de commande**/
 .order__button {
     background: linear-gradient(-15deg, #9356DC, #FF79DA );

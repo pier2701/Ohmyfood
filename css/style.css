@@ -490,9 +490,9 @@ h2, h1 {
 }
 .fa-heart:active + #fill_heart {
   z-index: 1;
-  animation: heart 0.3s 0s normal both;
-  -webkit-animation: heart 0.3s 0s normal both;
-  -moz-animation: heart 0.3s 0s normal both;
+  animation: heart 0.3s 0s normal forwards;
+  -webkit-animation: heart 0.3s 0s normal forwards;
+  -moz-animation: heart 0.3s 0s normal forwards;
 }
 @media (min-width: 900px) {
   .fa-heart {
@@ -557,10 +557,6 @@ h2, h1 {
   padding: 4px 5px 4px 5px;
   position: relative;
   top: 23px;
-}
-.fa-check:active {
-  -webkit-animation: check_rotation 0.4s 0s ease-in both;
-          animation: check_rotation 0.4s 0s ease-in both;
 }
 
 /* loader */
@@ -970,6 +966,116 @@ h2, h1 {
   width: 100%;
 }
 
+@-webkit-keyframes dishes-display {
+  0% {
+    -webkit-transform: translateX(1400px);
+            transform: translateX(1400px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dishes-display {
+  0% {
+    -webkit-transform: translateX(1400px);
+            transform: translateX(1400px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+.choice__animation-1 {
+  -webkit-animation: dishes-display 0.7s 4s linear both;
+          animation: dishes-display 0.7s 4s linear both;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+.choice__animation-2 {
+  -webkit-animation: dishes-display 0.7s 4s linear both;
+          animation: dishes-display 0.7s 4s linear both;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+}
+.choice__animation-3 {
+  -webkit-animation: dishes-display 0.7s 4s linear both;
+          animation: dishes-display 0.7s 4s linear both;
+  -webkit-animation-duration: 2.1s;
+          animation-duration: 2.1s;
+}
+.choice__animation-4 {
+  -webkit-animation: dishes-display 0.7s 4s linear both;
+          animation: dishes-display 0.7s 4s linear both;
+  -webkit-animation-duration: 2.8s;
+          animation-duration: 2.8s;
+}
+.choice__animation-5 {
+  -webkit-animation: dishes-display 0.7s 4s linear both;
+          animation: dishes-display 0.7s 4s linear both;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+}
+.choice__animation-6 {
+  -webkit-animation: dishes-display 0.7s 4s linear both;
+          animation: dishes-display 0.7s 4s linear both;
+  -webkit-animation-duration: 4.2s;
+          animation-duration: 4.2s;
+}
+.choice__animation-7 {
+  -webkit-animation: dishes-display 0.7s 4s linear both;
+          animation: dishes-display 0.7s 4s linear both;
+  -webkit-animation-duration: 4.9s;
+          animation-duration: 4.9s;
+}
+.choice__animation-8 {
+  -webkit-animation: dishes-display 0.7s 4s linear both;
+          animation: dishes-display 0.7s 4s linear both;
+  -webkit-animation-duration: 5.6s;
+          animation-duration: 5.6s;
+}
+.choice__animation-9 {
+  -webkit-animation: dishes-display 0.7s 4s linear both;
+          animation: dishes-display 0.7s 4s linear both;
+  -webkit-animation-duration: 6.3s;
+          animation-duration: 6.3s;
+}
+.choice__animation-10 {
+  -webkit-animation: dishes-display 0.7s 4s linear both;
+          animation: dishes-display 0.7s 4s linear both;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+
 .choice__name {
   width: 90%;
   height: 70px;
@@ -995,6 +1101,17 @@ h2, h1 {
   -webkit-box-shadow: 15px 13px 10px #e7e7e7;
           box-shadow: 15px 13px 10px #e7e7e7;
 }
+.choice__name:active .choice__name--icone {
+  margin-left: 50px;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.choice__name:active .fa-check {
+  -webkit-animation: check_rotation 0.3s linear forwards;
+          animation: check_rotation 0.3s linear forwards;
+}
+
 .choice__name--bold {
   width: 100%;
   font-weight: bold;
@@ -1003,22 +1120,13 @@ h2, h1 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .choice__name--regular {
   width: 100%;
   font-size: 14px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-.choice__name:active .choice__name--icone {
-  margin-left: 50px;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.choice__name:active .fa-check {
-  -webkit-animation: check_rotation 0.3s 0s ease-in both;
-          animation: check_rotation 0.3s 0s ease-in both;
 }
 
 .choice__name--details {

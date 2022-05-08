@@ -49,13 +49,14 @@ main {
         width: 25%;
     }
 }
-article {
+section {
     width: 100%;
     height: 380px;
     text-align: center;
     background: $color-background;
 }
 aside, nav {
+
     @include for-big-desktop-up {
         max-width: 1440px;
         margin: auto;
@@ -80,7 +81,9 @@ form, input {
     }
 }
 #fonctionnement {
-    padding-left: 4.7%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
     @include for-tablet-landscape-up {
         font-size: 28px;
     }
@@ -371,16 +374,6 @@ $rotate_cage: rotate3D(90, -4000, -70, 3600deg);
 .point3 {
     display: inline-block;
     animation: textpoint 0.5s 1.4s both;
-}
-/**animation coeur**/
-@keyframes heart {
-    0% {
-        transform: scale(0);
-        transform-origin: bottom;
-    }
-    100% {
-        transform: scale(1);
-    }
 }
 /**animation Fonctionnement**/
 @keyframes functions {

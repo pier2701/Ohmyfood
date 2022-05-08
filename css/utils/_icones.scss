@@ -7,41 +7,62 @@
 .fa-store {
     animation: icone_function 2s linear 9 8s;
 }
-.fa-heart {
+#empty_heart-1, #empty_heart-2, #empty_heart-3, #empty_heart-4 {
     position: relative;
-    top: 15px;
-    right: 40px;
+    bottom: 50px;
+    left: 88%;
     font-size: 25px;
     cursor: pointer;
     opacity: 1;
     z-index: 1;
-    &:active + #fill_heart {
+    &:active + #fill_heart-1, &:active + #fill_heart-2, &:active + #fill_heart-3, &:active + #fill_heart-4 {
         z-index: 1;
-        animation: heart 0.3s 0s normal forwards;
-        -webkit-animation: heart 0.3s 0s normal forwards;
-        -moz-animation: heart 0.3s 0s normal forwards;
+        animation: heart 0.3s ease-in-out both;
     }
-    @include for-tablet-landscape-up {
-        font-size: 30px;
-        right: 50px;
-
+    &:active {
+        transition: 0.3s;
+        opacity: 0;
     }
 }
+@keyframes heart {
+    0% {
+        opacity: 0;
+        transform-origin: bottom;
+        transform: scaleY(0);
+    }
+    20% {
+        opacity: 0.1;
+        transform: scaleY(0.2);
+    }
+    40% {
+        opacity: 0.2;
+        transform: scaleY(0.4);
+    }
+    60% {
+        opacity: 0.4;
+        transform: scaleY(0.5);
+    }
+    80% {
+        opacity: 0.6;
+        transform: scaleY(0.6);
+    }
+    100% {
+        opacity: 0.8;
+        transform: scaleY(1);
+    }
+    
+}
 /**l'effet progresse et reste actif**/
-#fill_heart {
+#fill_heart-1, #fill_heart-2, #fill_heart-3, #fill_heart-4 {
+    font-size: 25px;
     position: relative;
-    top: -11px;
-    right: 40px;
+    bottom: 75px;
+    left: 88%;
     background:-webkit-linear-gradient(bottom, #FF79DA 10%, #9356DC 70%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    animation-play-state: paused;
     z-index: -1; 
-    @include for-tablet-landscape-up {
-        right: 50px;
-        top: -15.5px;
-    }
 }
 .fa-mobile-screen-button, .fa-list, .fa-store{
     font-size: 20px;

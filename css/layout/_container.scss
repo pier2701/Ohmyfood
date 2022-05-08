@@ -59,7 +59,9 @@
 .pink__button {
     background: linear-gradient(-15deg, #9356DC, #FF79DA );
     color: #ffff;
+    width: 320px;
     padding: 20px 25px 20px 25px;
+    margin: auto;
     margin-top: 30px;
     border: none;
     cursor: pointer;
@@ -92,22 +94,25 @@
         &__text {
             padding-top: 25px;
             font-size: 16px;
+            @include for-tablet-portrait-up {
+                font-size: 18px;
+            }
+            @include for-tablet-landscape-up {
+                font-size: 18px;
+            }
         } 
     z-index: 0;
     @include for-tablet-portrait-up {
-        width: 60%;
+        width: 400px;
         margin: auto;
         margin-bottom: 10%;
         justify-content: center;
         border-radius: 50px;
     }
-    @include for-tablet-landscape-up {
-        width: 50%;
-    }
+    
     @include for-desktop-up {
-        width: 37%;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 12px;
+        padding-bottom: 10px;
         margin-bottom: 5%;
         &:hover {
         opacity: 0.9;
@@ -115,14 +120,7 @@
         }
     }
 }
-.function__text {
-    @include for-tablet-portrait-up {
-        font-size: 20px;
-    }
-    @include for-tablet-landscape-up {
-        font-size: 24px;
-    }
-}
+/**animation du fonctionnement**/
 #function_1 {
     animation: functions 2s linear 6 4s;
 }
@@ -134,6 +132,7 @@
 }
 .card {
     width: 91%;
+    height: 267px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -144,16 +143,16 @@
     z-index: 0;
     transition: 0.5s;
     @include for-tablet-portrait-up {
-        width: 80%;
+        width: 91%;
     }
     @include for-tablet-landscape-up {
-        width: 70%;
-        height: 280px;
+        
+        
         margin-bottom: 45px;
     }
     @include for-desktop-up {
-        width: 60%;
-        height: 350px;
+        
+        
         &:hover {
             box-shadow: 15px 15px 35px #c9c9c9;
         }
@@ -164,9 +163,7 @@
     height: 200px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
-    @include for-desktop-up {
-        height: 270px;
-    }
+    
 }
 .card__nouveau {
     position: absolute;
@@ -189,6 +186,7 @@
         right: 20%;
     }
     @include for-big-desktop-up {
+        right: 24%;
         padding: 14px 20px 14px 20px;
         margin-top: 30px;
         border-radius: 15px;
@@ -206,7 +204,7 @@
     width: 100%;
     padding: 10px 0px 15px 15px;
     @include for-tablet-landscape-up {
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 .card__display {
@@ -216,9 +214,7 @@
 .card__link {
     width: 100%;
 }
-.hearts__display {
-    width: 0px;
-}
+
 /**mise en page des restaurants**/
 .main__background {
     background: #f6f6f6;
@@ -260,6 +256,9 @@
         justify-content: center;
         border-radius: 50px;
         box-shadow: 15px 13px 10px #e7e7e7;
+        &:hover {
+            box-shadow: 19px 17px 14px darken($color: #e7e7e7, $amount: 3) ;
+        }
     }
 }
 .restaurant__name {
@@ -355,10 +354,6 @@
     border-radius: 17px;
     box-shadow: 12px 12px 150px #f5f5f5;
     transition: 0.3s;
-    &:hover {
-        opacity: 0.9;
-        box-shadow: 15px 13px 10px #e7e7e7;
-        }
     &:active .choice__name--icone {
         margin-left: 50px; 
         transform: translateX(0);
@@ -371,6 +366,10 @@
     }
     @include for-desktop-up {
         box-shadow: 10px 8px 10px #e7e7e7;
+        &:hover {
+            opacity: 0.9;
+            box-shadow: 15px 13px 10px #e7e7e7;
+            }
     }
 }
 .choice__name:active .fa-check {
@@ -426,6 +425,7 @@
     color: #ffff;
     padding: 20px 60px 20px 60px;
     display: block;
+    width: 220px;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 150px;

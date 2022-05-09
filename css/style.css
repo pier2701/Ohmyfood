@@ -1600,7 +1600,7 @@ nav {
   0% {
     opacity: 0;
   }
-  60% {
+  2% {
     opacity: 0.6;
   }
   70% {
@@ -1620,7 +1620,7 @@ nav {
   0% {
     opacity: 0;
   }
-  60% {
+  2% {
     opacity: 0.6;
   }
   70% {
@@ -1709,7 +1709,7 @@ nav {
   40% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   80% {
@@ -1733,7 +1733,7 @@ nav {
   40% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   80% {
@@ -1757,7 +1757,7 @@ nav {
   40% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   80% {
@@ -1781,7 +1781,7 @@ nav {
   40% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   80% {
@@ -1805,7 +1805,7 @@ nav {
   40% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   80% {
@@ -1829,7 +1829,7 @@ nav {
   40% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   80% {
@@ -1853,7 +1853,7 @@ nav {
   40% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   80% {
@@ -1877,7 +1877,7 @@ nav {
   40% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   80% {
@@ -1901,7 +1901,7 @@ nav {
   40% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   80% {
@@ -1925,7 +1925,7 @@ nav {
   40% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   80% {
@@ -1949,7 +1949,7 @@ nav {
   40% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   80% {
@@ -1973,7 +1973,7 @@ nav {
   40% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   80% {
@@ -1997,7 +1997,7 @@ nav {
   40% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   80% {
@@ -2021,7 +2021,7 @@ nav {
   40% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   80% {
@@ -2045,7 +2045,7 @@ nav {
   40% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   80% {
@@ -2069,7 +2069,7 @@ nav {
   40% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   80% {
@@ -2152,7 +2152,7 @@ nav {
   50% {
     opacity: 0.5;
   }
-  60% {
+  2% {
     opacity: 0.4;
   }
   70% {
@@ -2195,7 +2195,7 @@ nav {
   50% {
     opacity: 0.5;
   }
-  60% {
+  2% {
     opacity: 0.4;
   }
   70% {
@@ -2239,7 +2239,7 @@ nav {
   50% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   70% {
@@ -2282,7 +2282,7 @@ nav {
   50% {
     opacity: 0.6;
   }
-  60% {
+  2% {
     opacity: 0.8;
   }
   70% {
@@ -2319,7 +2319,7 @@ nav {
   50% {
     opacity: 0.7;
   }
-  60% {
+  2% {
     opacity: 0.5;
   }
   70% {
@@ -2352,7 +2352,7 @@ nav {
   50% {
     opacity: 0.7;
   }
-  60% {
+  2% {
     opacity: 0.5;
   }
   70% {
@@ -2390,7 +2390,7 @@ nav {
   50% {
     color: #67b1fc;
   }
-  60% {
+  2% {
     color: rgb(159, 159, 255);
   }
   70% {
@@ -2425,7 +2425,7 @@ nav {
   50% {
     color: #67b1fc;
   }
-  60% {
+  2% {
     color: rgb(159, 159, 255);
   }
   70% {
@@ -2446,8 +2446,8 @@ nav {
   0% {
     -webkit-transform-origin: top;
     transform-origin: top;
-    -webkit-transform: scale(60);
-    transform: scale(60);
+    -webkit-transform: scale(2);
+    transform: scale(2);
     opacity: 0;
   }
   20% {
@@ -2456,7 +2456,7 @@ nav {
   40% {
     opacity: 0.4;
   }
-  60% {
+  2% {
     opacity: 0.6;
   }
   80% {
@@ -2472,8 +2472,8 @@ nav {
   0% {
     -webkit-transform-origin: top;
     transform-origin: top;
-    -webkit-transform: scale(60);
-    transform: scale(60);
+    -webkit-transform: scale(10);
+    transform: scale(10);
     opacity: 0;
   }
   20% {
@@ -2482,7 +2482,7 @@ nav {
   40% {
     opacity: 0.4;
   }
-  60% {
+  2% {
     opacity: 0.6;
   }
   80% {

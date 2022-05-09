@@ -1,16 +1,19 @@
 /*modification du champ de saisie du formulaire*/
 #city-form {
+    width: 160px;
     font-weight: bold;
     background-color: #eaeaea;
+    text-align: center;
 }
 #city-form::placeholder {
     font-weight: bold;
     font-size: 17px;
     background-color: #eaeaea;
     color: #000000;
-    padding-left: 28px;
+    
 }
 input {
+    display: flex;
     outline: none;
     background-color: #eaeaea;
     border: none;

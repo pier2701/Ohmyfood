@@ -1,16 +1,20 @@
+/**gestion des mediaQueries**/
 @mixin for-phone-only {
     @media (max-width: 599px) { @content; }
   }
-  @mixin for-tablet-portrait-up {
+@mixin for-tablet-portrait-up {
     @media (min-width: 600px) { @content; }
   }
-  @mixin for-tablet-landscape-up {
+@mixin for-tablet-landscape-up {
     @media (min-width: 900px) { @content; }
   }
-  @mixin for-desktop-up {
+@mixin for-desktop-up {
     @media (min-width: 1200px) { @content; }
   }
-  @mixin for-big-desktop-up {
+@mixin for-big-desktop-up {
     @media (min-width: 1440px) { @content; }
+  }
+  @mixin for-touch_device-only {
+    @media (max-width: 1199px) { @content; }
   }
   

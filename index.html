@@ -13,6 +13,7 @@
 </head>
     
 <body>
+<!--page de chargement-->
     <div class="loading_spinner">
             <span class="letter_1">o</span>
             <span class="letter_2">h</span>
@@ -28,11 +29,15 @@
             <p class="loading_text">loading<span class="point1">.</span><span class="point2">.</span><span class="point3">.</span></p>
         </div>
     </div>
+<!--fin de la page de chargement-->
     <div class="homepage">
+<!--logo-->
 <header>  
     <div class="box_title"><img class="header__img" src="./images/ohmyfood@2x.svg" alt="logo_ohmyfood"></div>
-</header>   
+</header>
+<!--présentation et liens restaurants-->
     <section>
+        <!--formulaire de recherche-->
         <form action="post">
             <i class="fa-solid fa-location-dot"></i>
             <input type="text" id="city-form" name="city" placeholder="Paris, Belleville" size="18"
@@ -43,6 +48,7 @@
     </section>
     
     <main>
+<!--fonctionnement-->
         <aside>
             <p class="font_bold font__title" id="fonctionnement">Fonctionnement</p>
                 <div>
@@ -63,6 +69,7 @@
                     </div>
                 </div>
         </aside>
+<!---les restaurants-->
         <nav>
             <p class="font_bold font__title" id="restaurants">Restaurants</p>
                 <div class="card">
@@ -119,20 +126,20 @@
         </nav>
         
     </main> 
-
+<!--pied de page-->
 <footer>
     <h2>ohmyfood</h2>
-        <div>
-            <a class="footer__text" href="#"><p><i class="fa-solid fa-utensils"></i>Proposer un restaurant</p></a>
+        <div class="footer__text">
+            <i class="fa-solid fa-utensils"></i><a class="footer__text--color" href="#">Proposer un restaurant</a>
         </div>
-        <div>
-            <a class="footer__text" href="#"><p><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</p></a>
+        <div class="footer__text">
+            <i class="fa-solid fa-handshake-angle"></i><a class="footer__text--color" href="#">Devenir partenaire</a>
         </div>
-        <div>
-            <a class="footer__text" href="#">Mentions légales</a>
+        <div class="footer__text">
+            <a class="footer__text--color" href="#">Mentions légales</a>
         </div>
-        <div class="footer__text__contact">
-            <a class="footer__text" href="mailto:ohmyfood@gmail.com">Contact</a>
+        <div class="footer__text">
+            <a class="footer__text--color" href="mailto:ohmyfood@gmail.com">Contact</a>
         </div>
 </footer>
 </div>

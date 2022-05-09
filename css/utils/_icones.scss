@@ -1,3 +1,24 @@
+/*flêche de retour au menu d'acceuil*/
+.fa-arrow-left {
+    font-size: 22px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    @include for-tablet-landscape-up {
+        font-size: 35px;
+        top: 50px;
+    }
+}
+/*disposition des icônes dans la partie fonctionnement*/
+.fa-mobile-screen-button, .fa-list, .fa-store{
+    font-size: 20px;
+    padding: 23px 20px 25px 10px;
+    color: #7e7e7e;
+    @include for-tablet-landscape-up {
+        font-size: 25px;
+    }
+}
+/*gestion synchro de l'animation des icônes dans la partie fonctionnement*/
 .fa-mobile-screen-button {
     animation: icone_function 2s linear 6 4s;
 }
@@ -7,6 +28,8 @@
 .fa-store {
     animation: icone_function 2s linear 9 8s;
 }
+/**affichage et gestion des coeurs**/
+/*coeur vide*/
 #empty_heart-1, #empty_heart-2, #empty_heart-3, #empty_heart-4 {
     position: relative;
     bottom: 50px;
@@ -23,7 +46,14 @@
         transition: 0.3s;
         opacity: 0;
     }
+    @include for-tablet-portrait-up {
+        left: 90%;
+    }
+    @include for-tablet-landscape-up {
+        left: 92%;
+    }
 }
+/*animation coeur*/
 @keyframes heart {
     0% {
         opacity: 0;
@@ -50,9 +80,8 @@
         opacity: 0.8;
         transform: scaleY(1);
     }
-    
 }
-/**l'effet progresse et reste actif**/
+/*coeur plein*/
 #fill_heart-1, #fill_heart-2, #fill_heart-3, #fill_heart-4 {
     font-size: 25px;
     position: relative;
@@ -63,33 +92,14 @@
     -webkit-background-clip: text;
     color: transparent;
     z-index: -1; 
-}
-.fa-mobile-screen-button, .fa-list, .fa-store{
-    font-size: 20px;
-    padding: 23px 20px 25px 10px;
-    color: #7e7e7e;
+    @include for-tablet-portrait-up {
+        left: 90%;
+    }
     @include for-tablet-landscape-up {
-        font-size: 25px;
+        left: 92%;
     }
 }
-.fa-handshake-angle {
-    font-size: 15px;
-    padding-right: 10px;
-}
-.fa-utensils {
-    font-size: 15px;
-    padding-right: 17px;
-}
-.fa-arrow-left {
-    font-size: 22px;
-    position: absolute;
-    top: 25px;
-    left: 20px;
-    @include for-tablet-landscape-up {
-        font-size: 35px;
-        top: 50px;
-    }
-}
+/*icône des plats*/
 .fa-check {
     font-size: 13px;
     color: $color-tertiaire;
@@ -97,7 +107,14 @@
     border-radius: 50px;
     padding: 4px 5px 4px 5px;
     position: relative;
-    top: 23px;
-    
-    
+    top: 23px;    
+}
+/*icônes du footer*/
+.fa-handshake-angle {
+    font-size: 15px;
+    padding-right: 10px;
+}
+.fa-utensils {
+    font-size: 15px;
+    padding-right: 17px;
 }

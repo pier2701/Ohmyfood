@@ -447,8 +447,6 @@
     height: 25px;
     margin-top: 40px;
     padding-right: 9%;
-    -o-object-fit: cover;
-    object-fit: cover;
 }
 /**titres des catégories**/
 .dishes__name {
@@ -494,8 +492,8 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-       -moz-box-orient: vertical;
-       -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
@@ -528,7 +526,7 @@
 @-moz-keyframes dishes-display {
     0% {
         -moz-transform: translateY(20px);
-             transform: translateY(20px);
+            transform: translateY(20px);
         opacity: 0;
     }
     20% {
@@ -545,14 +543,14 @@
     }
     100% {
         -moz-transform: translateY(0);
-             transform: translateY(0);
+            transform: translateY(0);
         opacity: 1;
     }
 }
 @-o-keyframes dishes-display {
     0% {
         -o-transform: translateY(20px);
-           transform: translateY(20px);
+            transform: translateY(20px);
         opacity: 0;
     }
     20% {
@@ -569,15 +567,15 @@
     }
     100% {
         -o-transform: translateY(0);
-           transform: translateY(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
 @keyframes dishes-display {
     0% {
         -webkit-transform: translateY(20px);
-           -moz-transform: translateY(20px);
-             -o-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+            -o-transform: translateY(20px);
                 transform: translateY(20px);
         opacity: 0;
     }
@@ -595,8 +593,8 @@
     }
     100% {
         -webkit-transform: translateY(0);
-           -moz-transform: translateY(0);
-             -o-transform: translateY(0);
+        -moz-transform: translateY(0);
+            -o-transform: translateY(0);
                 transform: translateY(0);
         opacity: 1;
     }
@@ -606,12 +604,12 @@
     @for $i from 1 through 10 {
         &-#{$i} {
             -webkit-animation: dishes-display 0.5s 4s linear both;
-               -moz-animation: dishes-display 0.5s 4s linear both;
-                 -o-animation: dishes-display 0.5s 4s linear both;
+            -moz-animation: dishes-display 0.5s 4s linear both;
+                -o-animation: dishes-display 0.5s 4s linear both;
                     animation: dishes-display 0.5s 4s linear both;
             -webkit-animation-duration: 0.5s*$i;
-               -moz-animation-duration: 0.5s*$i;
-                 -o-animation-duration: 0.5s*$i;
+            -moz-animation-duration: 0.5s*$i;
+                -o-animation-duration: 0.5s*$i;
                     animation-duration: 0.5s*$i;
         }
     }
@@ -630,7 +628,7 @@
     overflow: hidden;
     white-space: nowrap;
     -o-text-overflow:  ellipsis;
-       text-overflow:  ellipsis;
+    text-overflow:  ellipsis;
     background: #ffff;
     margin-bottom: 15px;
     padding-right: 25px;
@@ -645,9 +643,9 @@
         @include for-touch_device-only {
             margin-left: 50px; 
             -webkit-transform: translateX(0); 
-               -moz-transform: translateX(0); 
+            -moz-transform: translateX(0); 
                 -ms-transform: translateX(0); 
-                 -o-transform: translateX(0); 
+                -o-transform: translateX(0); 
                     transform: translateX(0);
         } 
     }
@@ -655,9 +653,9 @@
         @include for-desktop-up {
             margin-left: 50px; 
             -webkit-transform: translateX(0); 
-               -moz-transform: translateX(0); 
+            -moz-transform: translateX(0); 
                 -ms-transform: translateX(0); 
-                 -o-transform: translateX(0); 
+                -o-transform: translateX(0); 
                     transform: translateX(0);
         }
     }
@@ -679,8 +677,8 @@
 .choice__name:active .fa-check {
     @include for-touch_device-only {
         -webkit-animation: check_rotation 0.3s linear forwards;
-           -moz-animation: check_rotation 0.3s linear forwards;
-             -o-animation: check_rotation 0.3s linear forwards;
+        -moz-animation: check_rotation 0.3s linear forwards;
+            -o-animation: check_rotation 0.3s linear forwards;
                 animation: check_rotation 0.3s linear forwards;
     }
 }
@@ -688,8 +686,8 @@
 .choice__name:hover .fa-check {
     @include for-desktop-up {
         -webkit-animation: check_rotation 0.3s linear forwards;
-           -moz-animation: check_rotation 0.3s linear forwards;
-             -o-animation: check_rotation 0.3s linear forwards;
+        -moz-animation: check_rotation 0.3s linear forwards;
+            -o-animation: check_rotation 0.3s linear forwards;
                 animation: check_rotation 0.3s linear forwards;
     }
 }
@@ -701,7 +699,7 @@
     white-space: nowrap;
     overflow: hidden;
     -o-text-overflow:  ellipsis;
-       text-overflow:  ellipsis;
+    text-overflow:  ellipsis;
 }
 /*nom de l'accompagnement*/
 .choice__name--regular {
@@ -710,7 +708,7 @@
     overflow: hidden;
     white-space: nowrap;
     -o-text-overflow:  ellipsis;
-       text-overflow:  ellipsis;
+    text-overflow:  ellipsis;
 }
 /*bloc comprenant le nom et l'accompagnement du plat*/
 .choice__name--details {
@@ -732,9 +730,9 @@
     padding-right: 50px;
     margin-left: -55px;
     -webkit-transform: translateX(64px);
-       -moz-transform: translateX(64px);
+    -moz-transform: translateX(64px);
         -ms-transform: translateX(64px);
-         -o-transform: translateX(64px);
+        -o-transform: translateX(64px);
             transform: translateX(64px);
 }
 /*bloc caché comprenant l'icône "check"*/
@@ -749,9 +747,9 @@
     -moz-transition: 0.3s;
     transition: 0.3s;
     -webkit-transform: translateX(72px);
-       -moz-transform: translateX(72px);
+    -moz-transform: translateX(72px);
         -ms-transform: translateX(72px);
-         -o-transform: translateX(72px);
+        -o-transform: translateX(72px);
             transform: translateX(72px);
 }
 /**bouton de commande des restaurants**/
@@ -772,10 +770,10 @@
     border-radius: 50px;
     -webkit-box-shadow: 7px 5px 8px #c9c9c9;
             box-shadow: 7px 5px 8px #c9c9c9;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    -moz-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
         &:active {
             opacity: 0.85;
             -webkit-box-shadow: 15px 13px 9px #c9c9c9;

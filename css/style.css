@@ -1082,7 +1082,7 @@ h2, h1 {
 }
 
 /*coeur en-tête*/
-.restaurant__heart {
+#restaurant__heart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1891,8 +1891,8 @@ nav {
 }
 @-webkit-keyframes moveletter_5 {
   0% {
-    -webkit-transform: translateY(-65px);
-    transform: translateY(-65px);
+    -webkit-transform: translateY(65px);
+    transform: translateY(65px);
     opacity: 0;
   }
   20% {
@@ -1915,8 +1915,8 @@ nav {
 }
 @keyframes moveletter_5 {
   0% {
-    -webkit-transform: translateY(-65px);
-    transform: translateY(-65px);
+    -webkit-transform: translateY(65px);
+    transform: translateY(65px);
     opacity: 0;
   }
   20% {
@@ -1987,8 +1987,8 @@ nav {
 }
 @-webkit-keyframes moveletter_7 {
   0% {
-    -webkit-transform: translateY(-65px);
-    transform: translateY(-65px);
+    -webkit-transform: translateY(65px);
+    transform: translateY(65px);
     opacity: 0;
   }
   20% {
@@ -2011,21 +2011,21 @@ nav {
 }
 @keyframes moveletter_7 {
   0% {
-    -webkit-transform: translateY(-65px);
-    transform: translateY(-65px);
+    -webkit-transform: translateY(65px);
+    transform: translateY(65px);
     opacity: 0;
   }
   20% {
     opacity: 0.2;
   }
   40% {
+    opacity: 0.4;
+  }
+  60% {
     opacity: 0.6;
   }
-  2% {
-    opacity: 0.8;
-  }
   80% {
-    opacity: 0.9;
+    opacity: 0.8;
   }
   100% {
     -webkit-transform: translateY(0);
@@ -2472,8 +2472,8 @@ nav {
   0% {
     -webkit-transform-origin: top;
     transform-origin: top;
-    -webkit-transform: scale(10);
-    transform: scale(10);
+    -webkit-transform: scale(20);
+    transform: scale(20);
     opacity: 0;
   }
   20% {

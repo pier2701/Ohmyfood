@@ -145,6 +145,9 @@
     -o-transition: 0.4s;
     -moz-transition: 0.4s;
     transition: 0.4s;
+    @include for-tablet-portrait-up {
+        width: 270px;
+    }
         &:active {
             opacity: 0.85;
             -webkit-box-shadow: 15px 13px 9px #c9c9c9;

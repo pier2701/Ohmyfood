@@ -777,6 +777,11 @@ h2, h1 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+@media (min-width: 600px) {
+  .pink__button {
+    width: 270px;
+  }
+}
 .pink__button:active {
   opacity: 0.85;
   -webkit-box-shadow: 15px 13px 9px #c9c9c9;
@@ -1600,7 +1605,7 @@ nav {
   0% {
     opacity: 0;
   }
-  2% {
+  1% {
     opacity: 0.6;
   }
   70% {
@@ -1620,7 +1625,7 @@ nav {
   0% {
     opacity: 0;
   }
-  2% {
+  1% {
     opacity: 0.6;
   }
   70% {
@@ -1646,7 +1651,7 @@ nav {
     opacity: 0.6;
   }
   70% {
-    opacity: 0.5;
+    opacity: 0;
   }
   80% {
     opacity: 0.4;
@@ -1655,7 +1660,7 @@ nav {
     opacity: 0.3;
   }
   90% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   95% {
     opacity: 0.1;
@@ -1672,7 +1677,7 @@ nav {
     opacity: 0.6;
   }
   70% {
-    opacity: 0.5;
+    opacity: 0;
   }
   80% {
     opacity: 0.4;
@@ -1681,7 +1686,7 @@ nav {
     opacity: 0.3;
   }
   90% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   95% {
     opacity: 0.1;
@@ -1704,12 +1709,12 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   80% {
@@ -1728,12 +1733,12 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   80% {
@@ -1752,12 +1757,12 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   80% {
@@ -1776,12 +1781,12 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   80% {
@@ -1800,12 +1805,12 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   80% {
@@ -1824,12 +1829,12 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   80% {
@@ -1848,12 +1853,12 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   80% {
@@ -1872,12 +1877,12 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   80% {
@@ -1896,12 +1901,12 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   80% {
@@ -1920,12 +1925,12 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   80% {
@@ -1944,12 +1949,12 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   80% {
@@ -1968,12 +1973,12 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   80% {
@@ -1992,12 +1997,12 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   80% {
@@ -2016,7 +2021,7 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.4;
@@ -2040,12 +2045,12 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   80% {
@@ -2064,12 +2069,12 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   80% {
@@ -2132,7 +2137,7 @@ nav {
 /**animation loader-spinner_rond**/
 @-webkit-keyframes spinning {
   0% {
-    -webkittransform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     opacity: 1;
@@ -2150,22 +2155,22 @@ nav {
     opacity: 0.6;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0;
   }
-  2% {
+  1% {
     opacity: 0.4;
   }
   70% {
     opacity: 0.3;
   }
   80% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   90% {
     opacity: 0.1;
   }
   100% {
-    -webkittransform: rotate(-9000deg);
+    -webkit-transform: rotate(-9000deg);
     -webkit-transform: rotate(-9000deg);
     transform: rotate(-9000deg);
     opacity: 0;
@@ -2173,9 +2178,7 @@ nav {
 }
 @keyframes spinning {
   0% {
-    -webkittransform: rotate(0deg);
-    -moztransform: rotate(0deg);
-    -otransform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     opacity: 1;
@@ -2193,24 +2196,22 @@ nav {
     opacity: 0.6;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0;
   }
-  2% {
+  1% {
     opacity: 0.4;
   }
   70% {
     opacity: 0.3;
   }
   80% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   90% {
     opacity: 0.1;
   }
   100% {
-    -webkittransform: rotate(-9000deg);
-    -moztransform: rotate(-9000deg);
-    -otransform: rotate(-9000deg);
+    -webkit-transform: rotate(-9000deg);
     -webkit-transform: rotate(-9000deg);
     transform: rotate(-9000deg);
     opacity: 0;
@@ -2219,7 +2220,7 @@ nav {
 /**animation loader-spinner_rectangle**/
 @-webkit-keyframes spinning2 {
   0% {
-    -webkittransform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     opacity: 0;
@@ -2228,7 +2229,7 @@ nav {
     opacity: 0.1;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   30% {
     opacity: 0.3;
@@ -2239,7 +2240,7 @@ nav {
   50% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   70% {
@@ -2249,20 +2250,18 @@ nav {
     opacity: 0.4;
   }
   90% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   100% {
-    -webkittransform: rotate3D(90, -4000, -70, 3600deg);
-    -webkit-transform: rotate3D(90, -4000, -70, 3600deg);
-    transform: rotate3D(90, -4000, -70, 3600deg);
+    -webkit-transform: rotate3D(90, -4000, -70, 5000deg);
+    -webkit-transform: rotate3D(90, -4000, -70, 5000deg);
+    transform: rotate3D(90, -4000, -70, 5000deg);
     opacity: 0;
   }
 }
 @keyframes spinning2 {
   0% {
-    -webkittransform: rotate(0deg);
-    -moztransform: rotate(0deg);
-    -otransform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     opacity: 0;
@@ -2271,7 +2270,7 @@ nav {
     opacity: 0.1;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   30% {
     opacity: 0.3;
@@ -2282,7 +2281,7 @@ nav {
   50% {
     opacity: 0.6;
   }
-  2% {
+  1% {
     opacity: 0.8;
   }
   70% {
@@ -2292,22 +2291,20 @@ nav {
     opacity: 0.4;
   }
   90% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   100% {
-    -webkittransform: rotate3D(90, -4000, -70, 3600deg);
-    -moztransform: rotate3D(90, -4000, -70, 3600deg);
-    -otransform: rotate3D(90, -4000, -70, 3600deg);
-    -webkit-transform: rotate3D(90, -4000, -70, 3600deg);
-    transform: rotate3D(90, -4000, -70, 3600deg);
+    -webkit-transform: rotate3D(90, -4000, -70, 5000deg);
+    -webkit-transform: rotate3D(90, -4000, -70, 5000deg);
+    transform: rotate3D(90, -4000, -70, 5000deg);
     opacity: 0;
   }
 }
 /**animation "loading" vers le bas**/
 @-webkit-keyframes loadingtext {
   0% {
-    -webkit-transform: scale(360deg);
-    transform: scale(360deg);
+    -webkit-transform: scale(1);
+    transform: scale(1);
     opacity: 1;
   }
   30% {
@@ -2319,8 +2316,8 @@ nav {
   50% {
     opacity: 0.7;
   }
-  2% {
-    opacity: 0.5;
+  1% {
+    opacity: 0;
   }
   70% {
     opacity: 0.4;
@@ -2329,7 +2326,7 @@ nav {
     opacity: 0.3;
   }
   90% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   100% {
     -webkit-transform: scale(0);
@@ -2339,8 +2336,8 @@ nav {
 }
 @keyframes loadingtext {
   0% {
-    -webkit-transform: scale(360deg);
-    transform: scale(360deg);
+    -webkit-transform: scale(1);
+    transform: scale(1);
     opacity: 1;
   }
   30% {
@@ -2352,8 +2349,8 @@ nav {
   50% {
     opacity: 0.7;
   }
-  2% {
-    opacity: 0.5;
+  1% {
+    opacity: 0;
   }
   70% {
     opacity: 0.4;
@@ -2362,7 +2359,7 @@ nav {
     opacity: 0.3;
   }
   90% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   100% {
     -webkit-transform: scale(0);
@@ -2390,7 +2387,7 @@ nav {
   50% {
     color: #67b1fc;
   }
-  2% {
+  1% {
     color: rgb(159, 159, 255);
   }
   70% {
@@ -2425,7 +2422,7 @@ nav {
   50% {
     color: #67b1fc;
   }
-  2% {
+  1% {
     color: rgb(159, 159, 255);
   }
   70% {
@@ -2446,17 +2443,17 @@ nav {
   0% {
     -webkit-transform-origin: top;
     transform-origin: top;
-    -webkit-transform: scale(2);
-    transform: scale(2);
+    -webkit-transform: scale(1);
+    transform: scale(1);
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.4;
   }
-  2% {
+  1% {
     opacity: 0.6;
   }
   80% {
@@ -2477,12 +2474,12 @@ nav {
     opacity: 0;
   }
   20% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   40% {
     opacity: 0.4;
   }
-  2% {
+  1% {
     opacity: 0.6;
   }
   80% {
@@ -2515,28 +2512,24 @@ nav {
 /**animation "check" des plats dans les pages restaurants**/
 @-webkit-keyframes check_rotation {
   0% {
-    -webkittransform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkittransform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 @keyframes check_rotation {
   0% {
-    -webkittransform: rotate(0deg);
-    -moztransform: rotate(0deg);
-    -otransform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkittransform: rotate(360deg);
-    -moztransform: rotate(360deg);
-    -otransform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }

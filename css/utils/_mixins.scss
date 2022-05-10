@@ -1,4 +1,7 @@
 /**gestion des mediaQueries**/
+@mixin for-small-phone {
+    @media (max-width: 335px) { @content; }
+}
 @mixin for-phone-only {
     @media (max-width: 599px) { @content; }
   }
@@ -14,7 +17,7 @@
 @mixin for-big-desktop-up {
     @media (min-width: 1440px) { @content; }
   }
-  @mixin for-touch_device-only {
+@mixin for-touch_device-only {
     @media (max-width: 1199px) { @content; }
   }
   

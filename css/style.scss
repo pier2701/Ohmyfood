@@ -1395,7 +1395,7 @@ $rotate_cage: rotate3D(90, -4000, -70, 5000deg);
         opacity: 0.6;
     }
     50% {
-        opacity: 0;
+        opacity: 0.5;
     }
     1% {
         opacity: 0.4;
@@ -1407,7 +1407,7 @@ $rotate_cage: rotate3D(90, -4000, -70, 5000deg);
         opacity: 0.1;
     }
     90% {
-        opacity: 0.1;
+        opacity: 0.05;
     }
     100% {
         -webkit-transform: rotate(-9000deg);

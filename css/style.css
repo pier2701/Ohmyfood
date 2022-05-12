@@ -526,8 +526,8 @@ h2, h1 {
 }
 #empty_heart-1:active + #fill_heart-1, #empty_heart-1:active + #fill_heart-2, #empty_heart-1:active + #fill_heart-3, #empty_heart-1:active + #fill_heart-4, #empty_heart-2:active + #fill_heart-1, #empty_heart-2:active + #fill_heart-2, #empty_heart-2:active + #fill_heart-3, #empty_heart-2:active + #fill_heart-4, #empty_heart-3:active + #fill_heart-1, #empty_heart-3:active + #fill_heart-2, #empty_heart-3:active + #fill_heart-3, #empty_heart-3:active + #fill_heart-4, #empty_heart-4:active + #fill_heart-1, #empty_heart-4:active + #fill_heart-2, #empty_heart-4:active + #fill_heart-3, #empty_heart-4:active + #fill_heart-4 {
   z-index: 1;
-  -webkit-animation: heart 0.3s ease-in-out both;
-  animation: heart 0.3s ease-in-out both;
+  -webkit-animation: heart 0.4s ease-out forwards;
+  animation: heart 0.4s ease-out forwards;
 }
 #empty_heart-1:active, #empty_heart-2:active, #empty_heart-3:active, #empty_heart-4:active {
   -webkit-transition: 0.3s;

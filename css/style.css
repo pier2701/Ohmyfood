@@ -516,6 +516,7 @@ h2, h1 {
 /**affichage et gestion des coeurs**/
 /*coeur vide*/
 #empty_heart-1, #empty_heart-2, #empty_heart-3, #empty_heart-4 {
+  width: 10px;
   position: relative;
   bottom: 50px;
   left: 88%;
@@ -524,15 +525,17 @@ h2, h1 {
   opacity: 1;
   z-index: 1;
 }
-#empty_heart-1:active + #fill_heart-1, #empty_heart-1:active + #fill_heart-2, #empty_heart-1:active + #fill_heart-3, #empty_heart-1:active + #fill_heart-4, #empty_heart-2:active + #fill_heart-1, #empty_heart-2:active + #fill_heart-2, #empty_heart-2:active + #fill_heart-3, #empty_heart-2:active + #fill_heart-4, #empty_heart-3:active + #fill_heart-1, #empty_heart-3:active + #fill_heart-2, #empty_heart-3:active + #fill_heart-3, #empty_heart-3:active + #fill_heart-4, #empty_heart-4:active + #fill_heart-1, #empty_heart-4:active + #fill_heart-2, #empty_heart-4:active + #fill_heart-3, #empty_heart-4:active + #fill_heart-4 {
-  z-index: 1;
-  -webkit-animation: heart 0.4s ease-out forwards;
-  animation: heart 0.4s ease-out forwards;
-}
 #empty_heart-1:active, #empty_heart-2:active, #empty_heart-3:active, #empty_heart-4:active {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 0;
+}
+@media (max-width: 1199px) {
+  #empty_heart-1:active + #fill_heart-1, #empty_heart-1:active + #fill_heart-2, #empty_heart-1:active + #fill_heart-3, #empty_heart-1:active + #fill_heart-4, #empty_heart-2:active + #fill_heart-1, #empty_heart-2:active + #fill_heart-2, #empty_heart-2:active + #fill_heart-3, #empty_heart-2:active + #fill_heart-4, #empty_heart-3:active + #fill_heart-1, #empty_heart-3:active + #fill_heart-2, #empty_heart-3:active + #fill_heart-3, #empty_heart-3:active + #fill_heart-4, #empty_heart-4:active + #fill_heart-1, #empty_heart-4:active + #fill_heart-2, #empty_heart-4:active + #fill_heart-3, #empty_heart-4:active + #fill_heart-4 {
+    z-index: 1;
+    -webkit-animation: heart 0.4s ease-out forwards;
+    animation: heart 0.4s ease-out forwards;
+  }
 }
 @media (min-width: 600px) {
   #empty_heart-1, #empty_heart-2, #empty_heart-3, #empty_heart-4 {
@@ -542,6 +545,18 @@ h2, h1 {
 @media (min-width: 900px) {
   #empty_heart-1, #empty_heart-2, #empty_heart-3, #empty_heart-4 {
     left: 92%;
+  }
+}
+@media (min-width: 1200px) {
+  #empty_heart-1:hover + #fill_heart-1, #empty_heart-1:hover + #fill_heart-2, #empty_heart-1:hover + #fill_heart-3, #empty_heart-1:hover + #fill_heart-4, #empty_heart-2:hover + #fill_heart-1, #empty_heart-2:hover + #fill_heart-2, #empty_heart-2:hover + #fill_heart-3, #empty_heart-2:hover + #fill_heart-4, #empty_heart-3:hover + #fill_heart-1, #empty_heart-3:hover + #fill_heart-2, #empty_heart-3:hover + #fill_heart-3, #empty_heart-3:hover + #fill_heart-4, #empty_heart-4:hover + #fill_heart-1, #empty_heart-4:hover + #fill_heart-2, #empty_heart-4:hover + #fill_heart-3, #empty_heart-4:hover + #fill_heart-4 {
+    z-index: 1;
+    -webkit-animation: heart 0.4s ease-out both;
+    animation: heart 0.4s ease-out both;
+  }
+  #empty_heart-1:hover, #empty_heart-2:hover, #empty_heart-3:hover, #empty_heart-4:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
   }
 }
 

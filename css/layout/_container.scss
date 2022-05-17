@@ -508,7 +508,7 @@
             flex-direction: column;
     width: 100%;
 }
-/*animation du check*/
+/*animation décalé des plats à l'ouverture de la page*/
 @-webkit-keyframes dishes-display {
     0% {
         -webkit-transform: translateY(20px);
@@ -747,7 +747,7 @@
 }
 /*bloc caché comprenant l'icône "check"*/
 .choice__name--icone {
-    margin-right: -24px;
+    margin-right: -25px;
     background: $color-tertiaire;
     padding-right: 20px;
     padding-left: 20px;

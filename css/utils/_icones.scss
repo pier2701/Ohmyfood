@@ -74,10 +74,10 @@
     @include for-desktop-up {
             &:hover + #fill_heart-1, &:hover + #fill_heart-2, &:hover + #fill_heart-3, &:hover + #fill_heart-4 {
                 z-index: 1;
-                -webkit-animation: heart 0.4s ease-out both;
-                -moz-animation: heart 0.4s ease-out both;
-                    -o-animation: heart 0.4s ease-out both;
-                        animation: heart 0.4s ease-out both;
+                -webkit-animation: heart 0.4s ease-out forwards;
+                -moz-animation: heart 0.4s ease-out forwards;
+                    -o-animation: heart 0.4s ease-out forwards;
+                        animation: heart 0.4s ease-out forwards;
             }
             &:hover {
                 -webkit-transition: 0.3s;
